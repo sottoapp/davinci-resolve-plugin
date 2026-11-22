@@ -15,3 +15,4 @@ affects safety, prefer `resolve_control api_truth` and the vendored kernels.
 | [claude-plugin-authoring.md](claude-plugin-authoring.md) | `authoring-resolve-skills`, plugin layout, hooks, marketplace |
 
 | [skill-baseline-tests.md](skill-baseline-tests.md) | RED/GREEN subagent tests of the discipline-style skills |
+| [resolve-edition-features.md](resolve-edition-features.md) | `resolve-edition-features` |

@@ -17,6 +17,7 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 | `resolve-guide-fusion` | New | Use when asked how to composite, key green screen, track and attach graphics or build animated titles on Resolve's Fusion page, or why a Fusion comp is blank or slow. |
 | `resolve-guide-fairlight` | New | Use when asked how to clean up or mix audio in Resolve, which Fairlight tool fits a noise problem, how to set up buses and stems, or how to meter loudness. |
 | `resolve-guide-deliver` | New | Use when asked how to export or render from Resolve, which render mode, preset or codec to choose, or why an export came out partial, the wrong version or low quality. |
+| `resolve-edition-features` | New | Use when a task depends on DaVinci Resolve Free versus Studio, such as Neural Engine tools, HDR or Dolby Vision grading, hardware encoding, DCP or IMF output, or external scripting, or when a feature is unexpectedly miss |
 
 ## Editing craft (principles → Resolve actions)
 
@@ -59,6 +60,7 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 | Skill | Origin | Use it for |
 |---|---|---|
 | `resolve-conform` | Upstream | Use when importing or relinking editorial, checking a conform against a reference, repairing retimed or reversed subclips, tracing grades across a re-conform, or QCing a conformed timeline through the MCP, live or offlin |
+| `resolve-nle-roundtrip` | New | Use when moving a timeline between Resolve and Premiere Pro, Final Cut Pro, Avid Media Composer or a DAW through XML, FCPXML, AAF, EDL or OTIO, or when an imported timeline loses effects, speed ramps, titles or audio. |
 
 ## MCP — color
 
