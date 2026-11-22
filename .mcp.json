@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "davinci-resolve": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/bin/davinci-resolve-mcp.mjs", "server"]
+    },
+    "davinci-resolve-advanced": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/bin/davinci-resolve-advanced-mcp.mjs"]
+    }
+  }
+}

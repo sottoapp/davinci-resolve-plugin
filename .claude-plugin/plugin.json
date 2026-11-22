@@ -1,0 +1,8 @@
+{
+  "name": "davinci-resolve",
+  "version": "0.1.0",
+  "description": "Control DaVinci Resolve Studio from Claude: a vendored DaVinci Resolve MCP server plus a research-backed library of editing, color, audio, conform, delivery and Fusion skills, review agents, and source-media safety hooks.",
+  "author": { "name": "Sotto Studio" },
+  "license": "MIT",
+  "keywords": ["davinci-resolve", "video-editing", "color-grading", "mcp", "post-production"]
+}
