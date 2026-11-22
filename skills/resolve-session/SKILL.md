@@ -83,3 +83,8 @@ start editing off the back of this.
   take up to 60 seconds. Say so rather than appearing to hang.
 - Do not open, create, or switch projects without being asked. Reporting state
   is the whole job here.
+
+## If the Resolve tools are missing or the server won't connect
+A "Connection closed" from `davinci-resolve` / `davinci-resolve-advanced` usually means first-run setup was never done (Python venv, or
+`npm install` for the advanced server). Nothing installs automatically. Run `node scripts/resolve-doctor.mjs`, relay its exact fix
+steps to the user, and don't retry the tools until it reports healthy. Resolve itself must be running with a project open.

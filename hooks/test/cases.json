@@ -1,0 +1,789 @@
+[
+ {
+  "guard": "source-media",
+  "name": "media-00",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /Volumes/CARD/clip.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-01",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "mv /Volumes/CARD/a.mxf /Volumes/CARD/b.mxf"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-02",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i /Volumes/CARD/a.mov /Volumes/CARD/b.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-03",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i x.mp4 x.mp4"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-04",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "cp a.wav /Volumes/CARD/b.wav"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-05",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "echo hi > /Volumes/CARD/x.wav"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-06",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ls; rm /Volumes/X/y.braw"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-07",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "FOO=bar ffmpeg -i in.mov /Volumes/X/out.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-08",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "mkdir -p x\nmv camera.mov x/"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-09",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /Volumes/CARD/renders/clip.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-10",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "touch /media/card/a.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-11",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /Volumes/CARD/scratchpad-dailies/a.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-12",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm \"/Volumes/CARD/a.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-13",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffprobe a.mov && rm /Volumes/X/b.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-14",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "mv /Volumes/CARD/proxies/a.mov /Volumes/CARD/b.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-15",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i \"/Volumes/My Card/a.mov\" \"/Volumes/My Card/b.mov\""
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-16",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffprobe /Volumes/CARD/a.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-17",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i /Volumes/CARD/a.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-18",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i a.mov /tmp/out.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-19",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "cp a.mov /tmp/scratch/a.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-20",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /tmp/x.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-21",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i a.mov /Volumes/CARD/renders/out.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-22",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ls -la"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-23",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "echo hello"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-24",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm file.txt"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-25",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "cat a.mov | head"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-26",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "ffmpeg -i a.mov ~/.cache/x.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-27",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /home/u/tests/fixtures/a.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-28",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /home/u/claude-abc/a.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-29",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "cp /Volumes/CARD/a.mov /Volumes/CARD/exports/a.mov"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-30",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "rm /Volumes/CARD/davinci-resolve-mcp-analysis/x.wav"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-31",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": ""
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-32",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "   "
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-33",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "echo done > notes.txt"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "source-media",
+  "name": "media-34",
+  "steps": [
+   {
+    "event": {
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "chmod 644 /Volumes/CARD/a.mov"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "no-evidence-set-cdl-denied",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "mcp__plugin_davinci-resolve_davinci-resolve__timeline_item_color",
+     "tool_input": {
+      "action": "safe_set_cdl"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "dry-run-allowed",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "safe_set_cdl",
+      "params": {
+       "dry_run": true
+      }
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "non-grade-action-allowed",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "grade_evidence_base"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "png-read-then-cdl-allowed",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PostToolUse",
+     "tool_name": "Read",
+     "tool_input": {
+      "file_path": "/tmp/frame_001.png"
+     }
+    },
+    "expect": "none"
+   },
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "safe_set_cdl"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "evidence-then-bulk-asks",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PostToolUse",
+     "tool_name": "Read",
+     "tool_input": {
+      "file_path": "/tmp/frame_001.png"
+     }
+    },
+    "expect": "none"
+   },
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "safe_copy_grade"
+     }
+    },
+    "expect": "ask"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "no-evidence-bulk-denied",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "bulk_match_to_hero"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "plugin-scoped-gallery-then-propose-allowed",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PostToolUse",
+     "tool_name": "mcp__plugin_davinci-resolve_davinci-resolve__gallery_stills",
+     "tool_input": {}
+    },
+    "expect": "none"
+   },
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "propose_grade"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "probe-node-graph-then-bulk-asks",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PostToolUse",
+     "tool_name": "mcp__davinci-resolve__timeline_item_color",
+     "tool_input": {
+      "action": "probe_node_graph"
+     }
+    },
+    "expect": "none"
+   },
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "bulk_match_to_hero"
+     }
+    },
+    "expect": "ask"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "transcript-evidence-allowed",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "safe_apply_drx"
+     },
+     "transcript_entries": [
+      {
+       "message": {
+        "content": [
+         {
+          "type": "tool_use",
+          "name": "Read",
+          "input": {
+           "file_path": "/a/b.JPG"
+          }
+         }
+        ]
+       }
+      }
+     ]
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "irrelevant-read-then-cdl-denied",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PostToolUse",
+     "tool_name": "Read",
+     "tool_input": {
+      "file_path": "/a/notes.txt"
+     }
+    },
+    "expect": "none"
+   },
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "safe_set_cdl"
+     }
+    },
+    "expect": "deny"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "contact-sheet-bash-then-cdl-allowed",
+  "steps": [
+   {
+    "event": {
+     "hook_event_name": "PostToolUse",
+     "tool_name": "Bash",
+     "tool_input": {
+      "command": "python scripts/contact_sheet.py in.mov"
+     }
+    },
+    "expect": "none"
+   },
+   {
+    "event": {
+     "hook_event_name": "PreToolUse",
+     "tool_name": "x",
+     "tool_input": {
+      "action": "safe_set_cdl"
+     }
+    },
+    "expect": "none"
+   }
+  ]
+ },
+ {
+  "guard": "frame",
+  "name": "empty-event-allowed",
+  "steps": [
+   {
+    "event": {},
+    "expect": "none"
+   }
+  ]
+ }
+]

@@ -35,8 +35,8 @@ agent `tools:` lists and hook matchers; a bare `mcp__davinci-resolve__x` will no
 match. In prose, refer to tools by their short name (`timeline_item_color`).
 
 ## Test it
-- `python scripts/validate_plugin.py` (frontmatter, size, link checks) and
-  `claude plugin validate .` if the CLI is available.
+- `python3 scripts/validate_plugin.py` (frontmatter, size, link checks), `node --test hooks/test/guards.test.mjs`
+  if you touched hooks, and `claude plugin validate .` if the CLI is available.
 - Add realistic should-trigger and near-miss should-not-trigger prompts under
   `evals/` (see `evals/README.md`); pair a result check with a process check
   (e.g. dry-run tool used before the mutating tool).

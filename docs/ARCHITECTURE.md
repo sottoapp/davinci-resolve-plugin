@@ -6,10 +6,9 @@
 .mcp.json         MCP server declarations
 skills/           one directory per skill (flat — Claude Code does not nest)
 agents/           subagent definitions
-hooks/            hooks.json + the guard scripts it calls
-bin/              executables added to PATH (resolve-doctor)
+hooks/            hooks.json + the Node guard scripts it calls + test/ (node --test)
 mcp-server/       VENDORED upstream, verbatim — never edit (see UPSTREAM.md)
-scripts/          maintenance tooling (validate_plugin.py, gen_skill_library.py)
+scripts/          maintenance tooling (validate_plugin.py, gen_skill_library.py) and resolve-doctor.mjs
 evals/            flat test cases, prefixed by skill area (see evals/README.md)
 docs/             human docs: skill-library.md, plugin-components.md, research/
 ```
@@ -29,5 +28,7 @@ docs/             human docs: skill-library.md, plugin-components.md, research/
 3. Behavior-shaping (discipline) skills are baseline-tested without the skill first; if the control doesn't fail, don't add rules.
 4. Facts come from `docs/research/` with sources; unverified claims stay out of skills or are labeled.
 5. MCP tool names in agents/hooks use the plugin-scoped form `mcp__plugin_davinci-resolve_<server>__<tool>`.
-6. `docs/skill-library.md` is generated: `python3 scripts/gen_skill_library.py`. Before committing:
-   `python3 scripts/validate_plugin.py && claude plugin validate .`.
+6. Hooks are plain `node` commands (no inline env, no Python), PreToolUse guards are fail-closed (`onFailure: block`), and every guard change
+   must pass `node --test hooks/test/guards.test.mjs`. No `bin/` (it blocks claude.ai/Cowork installs) and no tracked binaries.
+7. `docs/skill-library.md` is generated: `python3 scripts/gen_skill_library.py`. Before committing:
+   `python3 scripts/validate_plugin.py && node --test hooks/test/guards.test.mjs && claude plugin validate .`.

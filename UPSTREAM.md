@@ -11,7 +11,7 @@ Plugin skills/agents/hooks were seeded from upstream's `.claude/skills`, `.claud
 `.agents/hooks` with these deliberate changes:
 - doc paths rewritten to `mcp-server/...`;
 - agent `tools:` use plugin-scoped MCP names (`mcp__plugin_davinci-resolve_<server>__…`);
-- `hooks/frame_verification_guard.py` normalises plugin-scoped tool names (see `norm()`);
+- the two guard hooks were ported from Python to Node (`hooks/*.mjs`), parity-tested against the originals on 53 cases (`hooks/test/`), and normalise plugin-scoped tool names (see `norm()`); `.mcp.json` disables the upstream GitHub update check;
 - upstream's dev-only `release-check` skill and drift/test hooks were not ported.
 Upstream's own `mcp-server/.claude`, `.agents`, `.codex` trees are left untouched.
 

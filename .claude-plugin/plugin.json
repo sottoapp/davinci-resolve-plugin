@@ -1,8 +1,13 @@
 {
   "name": "davinci-resolve",
+  "displayName": "DaVinci Resolve",
   "version": "0.1.0",
   "description": "Control DaVinci Resolve Studio from Claude: a vendored DaVinci Resolve MCP server plus a research-backed library of editing, color, audio, conform, delivery and Fusion skills, review agents, and source-media safety hooks.",
   "author": { "name": "Sotto Studio" },
+  "homepage": "https://github.com/sottoapp/davinci-resolve-plugin",
+  "repository": "https://github.com/sottoapp/davinci-resolve-plugin",
+  "supportUrl": "https://github.com/sottoapp/davinci-resolve-plugin/issues",
   "license": "MIT",
-  "keywords": ["davinci-resolve", "video-editing", "color-grading", "mcp", "post-production"]
+  "keywords": ["davinci-resolve", "video-editing", "color-grading", "mcp", "post-production"],
+  "engines": { "claude-code": ">=2.1.330" }
 }

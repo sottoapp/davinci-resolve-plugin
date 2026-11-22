@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Diagnose the vendored Resolve MCP install (Python venv, Resolve paths, Node deps for the advanced server).
-# Locates the plugin root from its own path: CLAUDE_PLUGIN_ROOT is not exported to Bash-tool commands.
-set -euo pipefail
-root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-exec node "$root/mcp-server/bin/davinci-resolve-mcp.mjs" doctor "$@"

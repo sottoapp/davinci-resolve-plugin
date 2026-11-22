@@ -1,16 +1,21 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "sotto-davinci-resolve",
-  "owner": { "name": "Sotto Studio" },
+  "owner": {
+    "name": "Sotto Studio"
+  },
   "description": "DaVinci Resolve MCP plugin with a research-backed skill library.",
   "plugins": [
     {
       "name": "davinci-resolve",
       "source": "./",
       "description": "Control DaVinci Resolve Studio from Claude: vendored MCP server, skill library, review agents and source-media safety hooks.",
-      "version": "0.1.0",
       "category": "video",
-      "tags": ["davinci-resolve", "mcp", "post-production"],
+      "tags": [
+        "davinci-resolve",
+        "mcp",
+        "post-production"
+      ],
       "strict": true
     }
   ]

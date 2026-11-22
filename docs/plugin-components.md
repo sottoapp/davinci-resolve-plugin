@@ -10,8 +10,8 @@ marked *unverified*.
 | **Skills** | `skills/<name>/SKILL.md` | ✅ 32 | the core of this plugin |
 | **MCP servers** | `.mcp.json` | ✅ 2 | live (Python) + advanced/offline (Node) Resolve servers |
 | **Subagents** | `agents/*.md` | ✅ 3 | cut/grade/drift reviewers. Plugin agents **cannot** carry `hooks`, `mcpServers` or `permissionMode` — those stay at plugin level |
-| **Hooks** | `hooks/hooks.json` | ✅ | source-media and frame-evidence guards; match plugin-scoped tool names `mcp__plugin_<plugin>_<server>__<tool>` |
-| **Executables** | `bin/` (chmod +x, added to Bash PATH) | ✅ `resolve-doctor` | setup diagnosis; claude.ai/Cowork will not install a plugin with a top-level `bin/` |
+| **Hooks** | `hooks/hooks.json` | ✅ | source-media and frame-evidence guards in Node (cross-platform), PreToolUse guards fail closed (`onFailure: block`); match plugin-scoped tool names `mcp__plugin_<plugin>_<server>__<tool>` |
+| **Executables** | `bin/` (chmod +x, added to Bash PATH) | ❌ | a top-level `bin/` makes claude.ai/Cowork refuse the install, so the doctor is `scripts/resolve-doctor.mjs` instead |
 | **Slash commands** | `commands/*.md` | ❌ | legacy form; every skill is already `/davinci-resolve:<skill>` |
 | **Output styles** | `output-styles/*.md` | ❌ (maybe later) | e.g. a terse "edit log" style; marginal, page unfetched |
 | **Themes** | `themes/*.json` (`experimental`) | ❌ | affect Claude Code's UI, not Resolve's |

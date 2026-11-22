@@ -16,8 +16,27 @@ for f in (".claude-plugin/plugin.json", ".claude-plugin/marketplace.json", ".mcp
 plugin = json.loads((ROOT / ".claude-plugin/plugin.json").read_text())
 market = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
 for p in market["plugins"]:
-    if p["name"] == plugin["name"] and p.get("version") != plugin.get("version"):
-        errors.append("marketplace version != plugin.json version")
+    if "version" in p:
+        errors.append("marketplace entry sets a version; keep it only in plugin.json")
+
+hooks = json.loads((ROOT / "hooks/hooks.json").read_text())["hooks"]
+for event, groups in hooks.items():
+    for group in groups:
+        for h in group["hooks"]:
+            cmd = h.get("command", "")
+            if re.match(r"^\w+=", cmd) or "python" in cmd:
+                errors.append(f"hooks.json {event}: command must be plain `node ...` (no inline env, no python): {cmd}")
+            for rel in re.findall(r"\$\{CLAUDE_PLUGIN_ROOT\}/([^\"\s]+)", cmd):
+                if not (ROOT / rel).is_file():
+                    errors.append(f"hooks.json {event}: missing script {rel}")
+            if event == "PreToolUse" and h.get("onFailure") != "block":
+                errors.append(f"hooks.json PreToolUse guard must set onFailure=block: {cmd}")
+
+import subprocess
+tracked = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True).stdout.split()
+for f in tracked:
+    if f.endswith((".pyc", ".pyo", ".so", ".dll", ".exe")) and not f.startswith("mcp-server/"):
+        errors.append(f"tracked binary: {f}")
 
 link = re.compile(r"`((?:mcp-server|docs)/[A-Za-z0-9_./-]+)`|\(((?:mcp-server|docs)/[A-Za-z0-9_./-]+)\)")
 skill_names = {p.name for p in (ROOT / "skills").iterdir()}

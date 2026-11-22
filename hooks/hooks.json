@@ -1,20 +1,20 @@
 {
-  "description": "Source-media safety and frame-evidence guards for DaVinci Resolve work.",
+  "description": "Source-media safety and frame-evidence guards for DaVinci Resolve work (Node, cross-platform).",
   "hooks": {
     "PreToolUse": [
       {
         "matcher": "mcp__.*davinci-resolve__(timeline_item_color|color_group)",
-        "hooks": [{ "type": "command", "command": "DAVINCI_AGENT_HOST=claude python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/frame_verification_guard.py\"", "timeout": 15 }]
+        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/frame-verification-guard.mjs\"", "timeout": 15, "onFailure": "block" }]
       },
       {
         "matcher": "Bash",
-        "hooks": [{ "type": "command", "command": "DAVINCI_AGENT_HOST=claude python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/source_media_guard.py\"", "timeout": 15 }]
+        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/source-media-guard.mjs\"", "timeout": 15, "onFailure": "block" }]
       }
     ],
     "PostToolUse": [
       {
         "matcher": "mcp__.*davinci-resolve__(media_analysis|gallery|gallery_stills|timeline_item_color)|Read|Bash",
-        "hooks": [{ "type": "command", "command": "DAVINCI_AGENT_HOST=claude python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/frame_verification_guard.py\"", "timeout": 15 }]
+        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/frame-verification-guard.mjs\"", "timeout": 15 }]
       }
     ]
   }
