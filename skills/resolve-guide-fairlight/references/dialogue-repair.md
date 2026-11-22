@@ -2,6 +2,7 @@
 
 Source: Resolve 21 Fairlight lesson (Lesson 6) https://www.youtube.com/watch?v=ChoOejMwLGw, analysed by Gemini
 (observations, not verified frame-by-frame by us). Cross-checked against the Fairlight Audio Guide where possible.
+**Edition column caveat:** the Free/Studio labels below come from this one video; eval graders flagged that Noise Reduction and DeHummer tier claims are unverified — confirm on Blackmagic's compare page before telling a Free user a plug-in is available.
 "Dialogue mixer" is a role, not a plug-in; "declick" is manual sample-level editing, not a plug-in.
 
 | Tool | Edition (per video) | Use for | Key settings / method | Cautions |

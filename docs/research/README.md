@@ -16,3 +16,4 @@ affects safety, prefer `resolve_control api_truth` and the vendored kernels.
 
 | [skill-baseline-tests.md](skill-baseline-tests.md) | RED/GREEN subagent tests of the discipline-style skills |
 | [resolve-edition-features.md](resolve-edition-features.md) | `resolve-edition-features` |
+| [skill-eval-iteration-1.md](skill-eval-iteration-1.md) | skill-creator loop results for the 11 guide/craft skills |

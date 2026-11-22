@@ -25,7 +25,7 @@ why the MCP's free-edition bridge is a 21.0.x path (`resolve-api-reliability`, u
 
 ## Unclear — verify in the UI before stating
 IntelliTrack, Relight, Face Refinement (not named on the Studio page); collaboration (compare page says Free includes multi-user;
-the Studio page is silent); Fusion edition differences; Smart Reframe and Voice Isolation tiers disagree across secondary sources.
+the Studio page is silent); Fusion edition differences; Smart Reframe and Voice Isolation tiers disagree across secondary sources; Fairlight Noise Reduction and DeHummer tiers are unconfirmed (one video says Free).
 
 ## Fallbacks when a Studio tool is missing
 Magic Mask → qualifier or Power Window with the Tracker (`resolve-guide-color`); Voice Isolation/Separator → EQ, gate/expander,
