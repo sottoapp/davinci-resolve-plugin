@@ -19,7 +19,9 @@ for p in market["plugins"]:
     if p["name"] == plugin["name"] and p.get("version") != plugin.get("version"):
         errors.append("marketplace version != plugin.json version")
 
-link = re.compile(r"`(mcp-server/[A-Za-z0-9_./-]+)`|\((mcp-server/[A-Za-z0-9_./-]+)\)")
+link = re.compile(r"`((?:mcp-server|docs)/[A-Za-z0-9_./-]+)`|\(((?:mcp-server|docs)/[A-Za-z0-9_./-]+)\)")
+skill_names = {p.name for p in (ROOT / "skills").iterdir()}
+xref = re.compile(r"`((?:resolve|editing)-[a-z-]+|house-style|authoring-resolve-skills)`")
 for skill in sorted((ROOT / "skills").iterdir()):
     md = skill / "SKILL.md"
     if not md.is_file():
@@ -38,6 +40,9 @@ for skill in sorted((ROOT / "skills").iterdir()):
         warnings.append(f"{skill.name}: description {len(desc)} chars (>1536 truncates)")
     if text.count("\n") > 500:
         warnings.append(f"{skill.name}: {text.count(chr(10))} lines (>500)")
+    for ref in xref.findall(text):
+        if ref not in skill_names and not ref.startswith("resolve-advanced"):
+            warnings.append(f"{skill.name}: references unknown skill `{ref}`")
     for a, b in link.findall(text):
         t = (a or b).rstrip("/.")
         if "*" not in t and not (ROOT / t).exists():

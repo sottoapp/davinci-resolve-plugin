@@ -7,12 +7,15 @@ with a research-backed library of workflow skills, review agents and safety hook
 ```
 .claude-plugin/   plugin.json, marketplace.json
 .mcp.json         live (Python) + advanced/offline (Node) MCP servers
-skills/           21 skills — index in docs/skill-library.md
+skills/           32 skills in three layers — index in docs/skill-library.md
+                    resolve-guide-*  Resolve itself (manual-based app guides)
+                    editing-*        editing craft mapped to Resolve actions
+                    resolve-*, …     driving Resolve through the MCP server
 agents/           cut-reviewer, grade-match-verifier, drift-guard-reviewer
 hooks/            source-media guard + frame-evidence guard
 mcp-server/       vendored upstream, verbatim (see UPSTREAM.md)
-docs/             skill-library.md, research/ (sourced digests)
-scripts/          validate_plugin.py
+docs/             skill-library.md, research/ (sourced digests, Gemini video analyses)
+scripts/          validate_plugin.py, gen_skill_library.py
 evals/            trigger/behavior cases (to be written)
 ```
 

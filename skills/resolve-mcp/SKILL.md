@@ -95,6 +95,25 @@ offer the call and let it fail.
   frames, missing media, or a missing optional dep; call the advanced
   `capabilities` tool).
 
+## Knowledge layer (what Resolve is and how to edit)
+
+When the question is *how Resolve works* or *how to edit well* — not "drive it for me" — use these first; they also say
+what the API cannot do and give the manual UI steps.
+
+| Question | Skill |
+|---|---|
+| Projects, databases, media, proxies/cache, relink, archives, collaboration | `resolve-guide-project-media` |
+| Cut/Edit pages, edit types, trims, multicam, retime, shortcuts | `resolve-guide-cut-edit` |
+| Color page: scopes, primaries, curves, keys, nodes, matching | `resolve-guide-color` |
+| Fusion compositing, keying, tracking, 3D | `resolve-guide-fusion` |
+| Fairlight: tracks/buses, dialogue repair, mix, loudness, stems | `resolve-guide-fairlight` |
+| Deliver page, render modes, queue | `resolve-guide-deliver` |
+| Cut craft: Rule of Six, cut types, continuity, pacing | `editing-principles` |
+| Interviews and documentary | `editing-interview-documentary` |
+| Sound design and music editing | `editing-sound-music` |
+| Vertical short-form | `editing-short-form-vertical` |
+| Reviewing a cut and handling notes | `editing-review-feedback` |
+
 ## Plugin additions (cross-cutting and workflow skills)
 
 | Need | Skill |
