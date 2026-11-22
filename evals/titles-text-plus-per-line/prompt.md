@@ -1,0 +1,1 @@
+in Resolve i made a Text+ title with two lines but when i change the font size on the Edit page both lines change. i want a big name and a small role under it, a soft shadow, and then reuse it in other projects and have claude change the name text on 30 of them. how?

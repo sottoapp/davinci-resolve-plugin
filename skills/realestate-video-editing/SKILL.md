@@ -33,4 +33,4 @@ Room order, per-deliverable shot lists and pacing numbers: `references/deliverab
 ## Mistakes that read as amateur
 Weak open · equal time on every room · long walking footage · effect and transition overuse · one generic master for every platform · stale price/address ·
 mismatched white balance room to room · music over VO · no captions · over-stabilising · no review of the final render.
-Repeat jobs: master template + Power Bins + per-property duplicate (`resolve-templates-and-batching`).
+Titles, lower thirds and CTA cards: `resolve-titles-and-lower-thirds`. Repeat jobs: master template + Power Bins + per-property duplicate (`resolve-templates-and-batching`).

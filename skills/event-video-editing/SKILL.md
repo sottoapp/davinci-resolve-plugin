@@ -29,7 +29,7 @@ Per-deliverable structures, B-roll list and same-day plan: `references/structure
 7. **Recap**: open on the strongest moment, not a logo; weave soundbites through B-roll; hold key moments; natural applause and crowd under music; end with impact and the required CTA or sponsor card.
 8. **Full sessions**: one timeline per session, trim dead air, default to the cleanest angle, strap shown on first introduction, keep audience questions, chapter markers, watch the whole export.
 9. **Speaker clips and cutdowns**: self-contained ideas, filler removed, jump cuts covered, burned-in captions; verticals are rebuilds (`editing-short-form-vertical`).
-10. **Speed systems**: Power Bin of logos, openers, lower thirds, sponsor bugs, end cards; timeline templates per deliverable; saved Deliver presets (`resolve-templates-and-batching`). Then colour and audio (`event-color-audio-in-resolve`) and QC the export (`resolve-qc-gate`).
+10. **Speed systems**: Power Bin of logos, openers, lower thirds, sponsor bugs, end cards (graphics, titles and transitions: `event-graphics-titles-transitions`); timeline templates per deliverable; saved Deliver presets (`resolve-templates-and-batching`). Then colour and audio (`event-color-audio-in-resolve`) and QC the export (`resolve-qc-gate`).
 
 ## Same-day rules
 Dedicated editor who is not also shooting; work in parallel during the event; one track, one story, few strong quotes, simple titles; export a review early; test on the venue screen; set a hard approval cutoff.

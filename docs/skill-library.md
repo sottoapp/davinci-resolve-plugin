@@ -20,6 +20,7 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 | `resolve-edition-features` | New | Use when a task depends on DaVinci Resolve Free versus Studio, such as Neural Engine tools, HDR or Dolby Vision grading, hardware encoding, DCP or IMF output, or external scripting, or when a feature is unexpectedly miss |
 | `resolve-speed-ramps-transitions` | New | Use when building speed ramps, whip or zoom transitions, luma-fade day-to-night changes, motion blur, camera shake or tracked light effects in DaVinci Resolve, or when a ramp looks stuttery, jerky or overdone. |
 | `resolve-templates-and-batching` | New | Use when setting up repeatable Resolve work: project templates, Power Bins, Smart Bins, title and lower-third templates, Fusion macros, PowerGrades, render presets, queue batching, or when choosing between compound, Fusi |
+| `resolve-titles-and-lower-thirds` | New | Use when adding, styling, animating or templating on-screen text in DaVinci Resolve: titles, lower thirds, name straps, chapter or end cards, Text versus Text+ versus Fusion titles, per-line fonts, drop shadows, safe are |
 
 ## Vertical: real estate (how to edit a specific kind of video)
 
@@ -35,6 +36,7 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 |---|---|---|
 | `wedding-video-editing` | New | Use when editing a wedding film in DaVinci Resolve (teaser, highlight, feature, full ceremony, speeches, same-day edit, or vertical social cut), syncing ceremony or toast audio to several cameras, building a multicam, or |
 | `wedding-color-audio-in-resolve` | New | Use when color grading or fixing audio for a wedding film in DaVinci Resolve: dim receptions, mixed or colored lighting, skin tones across complexions, white dresses and dark suits, backlit ceremonies, matching several c |
+| `wedding-effects-transitions-titles` | New | Use when choosing or building transitions, effects, titles or typography for a wedding film in DaVinci Resolve: dissolves and J/L cuts, whip or light-leak transitions, grain, glow or halation, slow motion and speed ramps |
 | `wedding-delivery-client-care` | New | Use when delivering a wedding film or setting its terms: music licensing and social posting, guest or minor consent, venue or officiant filming limits, revisions and turnaround, gallery and USB delivery, captions, backup |
 
 ## Vertical: events (conferences, corporate, festivals, galas, sports)
@@ -43,6 +45,7 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 |---|---|---|
 | `event-video-editing` | New | Use when editing conference, corporate, keynote, panel, trade-show, festival, concert, gala, sports or community event video in DaVinci Resolve (recap, sizzle reel, full sessions, speaker or sponsor clips, social cutdown |
 | `event-color-audio-in-resolve` | New | Use when grading or fixing audio for event video in DaVinci Resolve: matching cameras under stage or LED lighting, colored stage light on faces, LED wall or projector flicker and banding, noisy low-light footage, mixer-f |
+| `event-graphics-titles-transitions` | New | Use when building the graphics package or transitions for event video in DaVinci Resolve: openers and countdowns, session or chapter cards, speaker lower thirds, sponsor bumpers and logo animations, slide picture-in-pict |
 | `event-delivery-compliance` | New | Use when preparing event video for publication or delivery: sponsor logo and placement obligations, speaker or attendee releases and filming notices, minors, venue or union restrictions, music or keynote slide clearance, |
 
 ## Editing craft (principles → Resolve actions)

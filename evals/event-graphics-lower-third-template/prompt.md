@@ -1,0 +1,1 @@
+i need to make speaker lower thirds and sponsor bumpers for a 2 day conference in Resolve. several editors will use them, and we also cut 9:16 clips for linkedin and instagram. how do i build this so it stays consistent?

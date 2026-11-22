@@ -28,7 +28,7 @@ Sourced from practitioner guides, Blackmagic material and two Resolve tutorials 
 5. **Selects by event**, tagged hero / story / reaction / texture / transition; log or transcribe vows, letters and toasts (`resolve-transcript-assembly`).
 6. **Highlight arc**: hook, anticipation, commitment, release, payoff. Dialogue assembly first with no music, then picture.
 7. **Pace**: music-first for montage, dialogue-first for vows; duck or drop music for speech and bring it back at a breath or sentence end; shots 2–5 s in details, longer holds in vows, shorter as the party builds.
-8. **Restraint**: clean cuts, J/L cuts, short dissolves for time passing; slow motion only from high-frame-rate footage; speed ramps for a kiss, reveal or dance move (`resolve-speed-ramps-transitions`).
+8. **Restraint**: clean cuts, J/L cuts, short dissolves for time passing; slow motion only from high-frame-rate footage; speed ramps for a kiss, reveal or dance move (`resolve-speed-ramps-transitions`). Transitions, effects and titles: `wedding-effects-transitions-titles`.
 9. **Verticals** are rebuilds of the highlight (`editing-short-form-vertical`); check on a phone.
 10. **Colour and audio** (`wedding-color-audio-in-resolve`), then QC the exported file, not the timeline (`resolve-qc-gate`), then client care (`wedding-delivery-client-care`).
 

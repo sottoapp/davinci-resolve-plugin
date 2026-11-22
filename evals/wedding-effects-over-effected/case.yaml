@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: wedding-effects-over-effected
+expected_outcome: |
+  Pushes back on a transition on every cut and on shake, glow and halation stacking; recommends cuts, J/L cuts, sparing dissolves; handles the script-font date and font licensing; notes Studio-only tools.
+---
+tags: [wedding-effects-transitions-titles]
+max_turns: 8
+timeout_seconds: 300
+allowed_tools: [Read, Glob, Grep, Skill]
+---

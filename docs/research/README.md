@@ -20,3 +20,4 @@ affects safety, prefer `resolve_control api_truth` and the vendored kernels.
 | [real-estate/](real-estate/README.md) | real-estate vertical: workflow, colour, delivery/compliance, repeatable workflows, 6 Gemini video analyses |
 | [wedding/](wedding/README.md) | wedding vertical: editing, colour and audio, delivery/client care, 3 Gemini analyses |
 | [event/](event/README.md) | event vertical: editing, colour/audio/finishing, delivery/compliance, 2 Gemini multicam analyses |
+| [titles-effects/](titles-effects/README.md) | titles, transitions, effects and graphics for wedding and event verticals, plus the general titles skill; 2 deep runs, 7 Gemini analyses |

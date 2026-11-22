@@ -32,6 +32,9 @@ evals/<case-name>/
 | `event-editing-` | event-video-editing |
 | `event-color-` | event-color-audio-in-resolve |
 | `event-compliance-` | event-delivery-compliance |
+| `wedding-effects-` | wedding-effects-transitions-titles |
+| `event-graphics-` | event-graphics-titles-transitions |
+| `titles-` | resolve-titles-and-lower-thirds |
 
 Each case's `prompt.md` frontmatter has `tags: [<skill-name>]`. Run results (workspace, outputs, benchmark) are **not** committed;
 summaries go in `docs/research/skill-eval-*.md`. Still to write: trigger/near-miss cases and cases for the MCP-driving skills.

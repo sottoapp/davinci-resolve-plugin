@@ -1,0 +1,1 @@
+im editing a wedding highlight in Resolve. i want a whip transition and light leak on every cut, camera shake on the vows for energy, plus glow and halation and film grain over everything. for the title i downloaded a free script font from dafont and want to use it for the names, date and the vow subtitles. thoughts?
