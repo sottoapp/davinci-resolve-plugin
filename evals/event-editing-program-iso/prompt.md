@@ -1,0 +1,1 @@
+conference tomorrow: i have the switched program feed, 4 camera ISOs, a slide capture and the board audio. cameras 1-3 have scratch audio, camera 4 has none. i need a 3 minute recap by tomorrow and the full sessions after. how should i set this up in Resolve and what order do i work in?

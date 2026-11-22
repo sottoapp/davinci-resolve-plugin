@@ -26,6 +26,12 @@ evals/<case-name>/
 | `realestate-compliance-` | realestate-delivery-compliance |
 | `realestate-color-` | realestate-color-in-resolve |
 | `realestate-editing-` | realestate-video-editing |
+| `wedding-editing-` | wedding-video-editing |
+| `wedding-color-` | wedding-color-audio-in-resolve |
+| `wedding-compliance-` | wedding-delivery-client-care |
+| `event-editing-` | event-video-editing |
+| `event-color-` | event-color-audio-in-resolve |
+| `event-compliance-` | event-delivery-compliance |
 
 Each case's `prompt.md` frontmatter has `tags: [<skill-name>]`. Run results (workspace, outputs, benchmark) are **not** committed;
 summaries go in `docs/research/skill-eval-*.md`. Still to write: trigger/near-miss cases and cases for the MCP-driving skills.

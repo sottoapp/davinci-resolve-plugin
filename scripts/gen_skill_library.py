@@ -12,6 +12,8 @@ NEW = {  # authored in this repo; everything else is ported from upstream
     "editing-sound-music", "editing-short-form-vertical", "editing-review-feedback",
     "resolve-nle-roundtrip", "resolve-edition-features", "resolve-session-handoff",
     "realestate-video-editing", "realestate-color-in-resolve", "realestate-delivery-compliance",
+    "wedding-video-editing", "wedding-color-audio-in-resolve", "wedding-delivery-client-care",
+    "event-video-editing", "event-color-audio-in-resolve", "event-delivery-compliance",
     "resolve-speed-ramps-transitions", "resolve-templates-and-batching",
 }
 GROUPS = [
@@ -19,6 +21,8 @@ GROUPS = [
         "resolve-guide-color", "resolve-guide-fusion", "resolve-guide-fairlight", "resolve-guide-deliver",
         "resolve-edition-features", "resolve-speed-ramps-transitions", "resolve-templates-and-batching"]),
     ("Vertical: real estate (how to edit a specific kind of video)", ["realestate-video-editing", "realestate-color-in-resolve", "realestate-delivery-compliance"]),
+    ("Vertical: weddings", ["wedding-video-editing", "wedding-color-audio-in-resolve", "wedding-delivery-client-care"]),
+    ("Vertical: events (conferences, corporate, festivals, galas, sports)", ["event-video-editing", "event-color-audio-in-resolve", "event-delivery-compliance"]),
     ("Editing craft (principles → Resolve actions)", ["editing-principles", "editing-interview-documentary",
         "editing-sound-music", "editing-short-form-vertical", "editing-review-feedback"]),
     ("Drive Resolve through MCP — orientation & safety", ["resolve-mcp", "resolve-session", "resolve-session-handoff", "resolve-api-reliability"]),

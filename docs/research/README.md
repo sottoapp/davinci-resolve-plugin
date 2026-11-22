@@ -18,3 +18,5 @@ affects safety, prefer `resolve_control api_truth` and the vendored kernels.
 | [resolve-edition-features.md](resolve-edition-features.md) | `resolve-edition-features` |
 | [skill-eval-iteration-1.md](skill-eval-iteration-1.md) | skill-creator loop results for the 11 guide/craft skills |
 | [real-estate/](real-estate/README.md) | real-estate vertical: workflow, colour, delivery/compliance, repeatable workflows, 6 Gemini video analyses |
+| [wedding/](wedding/README.md) | wedding vertical: editing, colour and audio, delivery/client care, 3 Gemini analyses |
+| [event/](event/README.md) | event vertical: editing, colour/audio/finishing, delivery/compliance, 2 Gemini multicam analyses |

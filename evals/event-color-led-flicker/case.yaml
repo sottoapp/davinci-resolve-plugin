@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: event-color-led-flicker
+expected_outcome: |
+  Declines to white-balance away intentional stage light; targets Deflicker and noise reduction with windows; admits severe banding may be unrecoverable; flags Studio availability; gives capture-side prevention.
+---
+tags: [event-color-audio-in-resolve]
+max_turns: 8
+timeout_seconds: 300
+allowed_tools: [Read, Glob, Grep, Skill]
+---

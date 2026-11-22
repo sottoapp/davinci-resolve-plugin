@@ -29,6 +29,22 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 | `realestate-color-in-resolve` | New | Use when color grading or correcting real estate footage in DaVinci Resolve: blown-out windows, mixed lighting, dull or tinted walls, crooked verticals, wide-angle distortion, drone log footage, twilight exteriors, or ro |
 | `realestate-delivery-compliance` | New | Use when preparing real estate video for the MLS, Zillow, social or an agent website, adding agent branding or text, writing on-screen or voiceover copy, using virtual staging, AI generation or sky replacement, picking m |
 
+## Vertical: weddings
+
+| Skill | Origin | Use it for |
+|---|---|---|
+| `wedding-video-editing` | New | Use when editing a wedding film in DaVinci Resolve (teaser, highlight, feature, full ceremony, speeches, same-day edit, or vertical social cut), syncing ceremony or toast audio to several cameras, building a multicam, or |
+| `wedding-color-audio-in-resolve` | New | Use when color grading or fixing audio for a wedding film in DaVinci Resolve: dim receptions, mixed or colored lighting, skin tones across complexions, white dresses and dark suits, backlit ceremonies, matching several c |
+| `wedding-delivery-client-care` | New | Use when delivering a wedding film or setting its terms: music licensing and social posting, guest or minor consent, venue or officiant filming limits, revisions and turnaround, gallery and USB delivery, captions, backup |
+
+## Vertical: events (conferences, corporate, festivals, galas, sports)
+
+| Skill | Origin | Use it for |
+|---|---|---|
+| `event-video-editing` | New | Use when editing conference, corporate, keynote, panel, trade-show, festival, concert, gala, sports or community event video in DaVinci Resolve (recap, sizzle reel, full sessions, speaker or sponsor clips, social cutdown |
+| `event-color-audio-in-resolve` | New | Use when grading or fixing audio for event video in DaVinci Resolve: matching cameras under stage or LED lighting, colored stage light on faces, LED wall or projector flicker and banding, noisy low-light footage, mixer-f |
+| `event-delivery-compliance` | New | Use when preparing event video for publication or delivery: sponsor logo and placement obligations, speaker or attendee releases and filming notices, minors, venue or union restrictions, music or keynote slide clearance, |
+
 ## Editing craft (principles → Resolve actions)
 
 | Skill | Origin | Use it for |

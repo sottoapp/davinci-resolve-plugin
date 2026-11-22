@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: wedding-compliance-music-teaser
+expected_outcome: |
+  Says buying a track does not grant sync or master rights, platform music libraries are platform-limited, recommends a library licence covering client work, advises couple approval for the sensitive child moment, and says it is not legal advice.
+---
+tags: [wedding-delivery-client-care]
+max_turns: 8
+timeout_seconds: 300
+allowed_tools: [Read, Glob, Grep, Skill]
+---

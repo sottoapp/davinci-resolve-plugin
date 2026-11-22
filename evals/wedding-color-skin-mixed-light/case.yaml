@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: wedding-color-skin-mixed-light
+expected_outcome: |
+  Warns against stacking a LUT on Color Managed; refuses to force one skin tone for everyone; grades by dominant light with tracked windows; notes Magic Mask is Studio; gives UI steps because the API cannot author grades.
+---
+tags: [wedding-color-audio-in-resolve]
+max_turns: 8
+timeout_seconds: 300
+allowed_tools: [Read, Glob, Grep, Skill]
+---

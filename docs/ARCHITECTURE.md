@@ -19,7 +19,7 @@ docs/             human docs: skill-library.md, plugin-components.md, research/
 | `resolve-guide-*` | Resolve itself | how the application works (manual-based), plus what the API can't do |
 | `editing-*` | craft | editing principles mapped to Resolve actions |
 | `resolve-*` (other) / `house-style` | driving it | how to operate Resolve through the MCP servers |
-| `realestate-*` | vertical | how to edit one kind of video (real estate now; wedding/events/etc. would follow as `<vertical>-*`) |
+| `realestate-*`, `wedding-*`, `event-*` | vertical | how to edit one kind of video; each vertical = editing + colour/audio + delivery/compliance skills, research in `docs/research/<vertical>/`; new verticals follow as `<vertical>-*` |
 | `authoring-resolve-skills` | meta | how to extend this plugin |
 
 ## Rules

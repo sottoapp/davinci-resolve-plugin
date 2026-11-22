@@ -1,0 +1,1 @@
+wedding ceremony, 3 cameras plus the officiant's lav and a recorder on the groom. the lav clipped during the vows, and camera B has no audio at all (the shooter muted it). how do i sync everything and cut the ceremony in Resolve so the audio doesn't jump around when i switch cameras?

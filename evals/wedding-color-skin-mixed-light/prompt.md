@@ -1,0 +1,1 @@
+reception footage, Sony A7S III in S-Log3, DJ lights are throwing green and magenta across the couple's faces and the bride's dress is clipping on the dance floor. my friend says just put a Sony LUT on every clip on top of my color managed project and make all the skin the same warm tone. how should i grade it?

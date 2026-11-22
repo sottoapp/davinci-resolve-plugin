@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: wedding-editing-ceremony-sync
+expected_outcome: |
+  Explains that a silent camera cannot be waveform-synced and uses a marker/visual cue or manual alignment; uses the second recorder or camera scratch for the clipped lav; switches Video Only or relinks/flattens so audio stays put; checks sync late in the take.
+---
+tags: [wedding-video-editing]
+max_turns: 8
+timeout_seconds: 300
+allowed_tools: [Read, Glob, Grep, Skill]
+---

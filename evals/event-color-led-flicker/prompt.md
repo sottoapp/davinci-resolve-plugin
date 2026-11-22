@@ -1,0 +1,1 @@
+keynote footage from last week: the LED wall behind the speaker has horizontal banding rolling through it and the whole stage is lit red and blue. my plan is to white balance the red and blue out, then slap temporal noise reduction and deflicker on every clip. will that fix it?

@@ -1,0 +1,1 @@
+i want to publish the keynote recording on YouTube and LinkedIn. the speaker's slides include a stock photo, the intro video has a Taylor Swift song because the venue's DJ licence covers it, there are sponsor logos on screen and a few close ups of attendees. can i just post it?
