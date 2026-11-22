@@ -10,7 +10,7 @@ NEW = {  # authored in this repo; everything else is ported from upstream
     "resolve-guide-project-media", "resolve-guide-cut-edit", "resolve-guide-color", "resolve-guide-fusion",
     "resolve-guide-fairlight", "resolve-guide-deliver", "editing-principles", "editing-interview-documentary",
     "editing-sound-music", "editing-short-form-vertical", "editing-review-feedback",
-    "resolve-nle-roundtrip", "resolve-edition-features",
+    "resolve-nle-roundtrip", "resolve-edition-features", "resolve-session-handoff",
 }
 GROUPS = [
     ("Learn Resolve itself (application guides)", ["resolve-guide-project-media", "resolve-guide-cut-edit",
@@ -18,7 +18,7 @@ GROUPS = [
         "resolve-edition-features"]),
     ("Editing craft (principles → Resolve actions)", ["editing-principles", "editing-interview-documentary",
         "editing-sound-music", "editing-short-form-vertical", "editing-review-feedback"]),
-    ("Drive Resolve through MCP — orientation & safety", ["resolve-mcp", "resolve-session", "resolve-api-reliability"]),
+    ("Drive Resolve through MCP — orientation & safety", ["resolve-mcp", "resolve-session", "resolve-session-handoff", "resolve-api-reliability"]),
     ("MCP — ingest & prep", ["resolve-media-pool", "resolve-media-analysis", "resolve-proxy-relink"]),
     ("MCP — edit", ["resolve-edit", "resolve-rough-cut", "resolve-tighten-recording", "resolve-transcript-assembly", "house-style"]),
     ("MCP — conform", ["resolve-conform", "resolve-nle-roundtrip"]),

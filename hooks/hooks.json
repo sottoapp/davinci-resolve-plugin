@@ -1,20 +1,62 @@
 {
-  "description": "Source-media safety and frame-evidence guards for DaVinci Resolve work (Node, cross-platform).",
+  "description": "Source-media and frame-evidence guards plus session handoff (Node, cross-platform).",
   "hooks": {
     "PreToolUse": [
       {
         "matcher": "mcp__.*davinci-resolve__(timeline_item_color|color_group)",
-        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/frame-verification-guard.mjs\"", "timeout": 15, "onFailure": "block" }]
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/frame-verification-guard.mjs\"",
+            "timeout": 15,
+            "onFailure": "block"
+          }
+        ]
       },
       {
         "matcher": "Bash",
-        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/source-media-guard.mjs\"", "timeout": 15, "onFailure": "block" }]
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/source-media-guard.mjs\"",
+            "timeout": 15,
+            "onFailure": "block"
+          }
+        ]
       }
     ],
     "PostToolUse": [
       {
         "matcher": "mcp__.*davinci-resolve__(media_analysis|gallery|gallery_stills|timeline_item_color)|Read|Bash",
-        "hooks": [{ "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/frame-verification-guard.mjs\"", "timeout": 15 }]
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/frame-verification-guard.mjs\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/session-handoff.mjs\" start",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/session-handoff.mjs\" end",
+            "timeout": 10
+          }
+        ]
       }
     ]
   }

@@ -1,0 +1,22 @@
+name: validate
+on: [push, pull_request]
+jobs:
+  hooks:            # the guards and handoff hooks must behave identically on every OS we claim to support
+    strategy:
+      fail-fast: false
+      matrix: { os: [ubuntu-latest, macos-latest, windows-latest] }
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node --test hooks/test/guards.test.mjs hooks/test/handoff.test.mjs
+  plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: python3 scripts/validate_plugin.py
+      - run: python3 scripts/gen_skill_library.py && git diff --exit-code docs/skill-library.md
+      - run: npm install -g @anthropic-ai/claude-code && claude plugin validate --strict .

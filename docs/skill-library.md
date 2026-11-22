@@ -35,6 +35,7 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 |---|---|---|
 | `resolve-mcp` | Upstream | Use when starting any DaVinci Resolve task to find the right skill, choose between the live and offline servers, or when a task spans several Resolve domains. |
 | `resolve-session` | Upstream | Use when starting a Resolve working session before any editing, or when the connection, edition or project state is unclear. |
+| `resolve-session-handoff` | New | Use when ending a Resolve work session, passing a project to another session or person, resuming from a handoff note, or when a "previous Resolve session" handoff appears in the session context. |
 | `resolve-api-reliability` | New | Use when a Resolve scripting or MCP call returns False or None or succeeds without changing anything, a call hangs, before bulk mutations or unattended headless runs, or when asked whether a feature exists on a given Res |
 
 ## MCP — ingest & prep

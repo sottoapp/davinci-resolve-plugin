@@ -31,4 +31,4 @@ docs/             human docs: skill-library.md, plugin-components.md, research/
 6. Hooks are plain `node` commands (no inline env, no Python), PreToolUse guards are fail-closed (`onFailure: block`), and every guard change
    must pass `node --test hooks/test/guards.test.mjs`. No `bin/` (it blocks claude.ai/Cowork installs) and no tracked binaries.
 7. `docs/skill-library.md` is generated: `python3 scripts/gen_skill_library.py`. Before committing:
-   `python3 scripts/validate_plugin.py && node --test hooks/test/guards.test.mjs && claude plugin validate .`.
+   `python3 scripts/validate_plugin.py && node --test hooks/test/guards.test.mjs hooks/test/handoff.test.mjs && claude plugin validate .`.
