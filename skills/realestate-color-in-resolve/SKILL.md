@@ -11,7 +11,7 @@ Resolve has no API for wheels, curves, qualifiers or windows (`resolve-api-relia
 
 ## Order
 1. **Pipeline first** (`resolve-color-management`): DaVinci YRGB Color Managed with each clip's Input Color Space, Rec.709 out — or a manual CST — never both. Confirm D-Log vs D-Log M (not interchangeable).
-2. **Fix framing in the Edit page**: Inspector ▸ Video ▸ Transform (Yaw/Pitch/Rotation, then Zoom to hide blank edges); Studio Lens Correction for distortion. Keep verticals parallel; don't stretch rooms bigger.
+2. **Fix framing in the Edit page**: Inspector ▸ Video ▸ Transform (Yaw/Pitch/Rotation, then Zoom to hide blank edges). **Every correction crops the frame and costs resolution**, so check the source is wide enough; Studio Lens Correction handles distortion. Keep verticals parallel; don't stretch rooms bigger.
 3. **Exposure + windows**: HDR palette — lower Highlights/Specular to pull window detail *just* until surfaces lose depth; raise Light for an open feel. A clipped window cannot be recovered.
    Hard windows: separate node, feathered Power Window + Tracker (`resolve-guide-color`).
 4. **White balance** on a known neutral (ceiling, white cabinet): check **RGB Parade**. Mixed light: balance the dominant source, treat the other with a Qualifier or window; don't sterilise warm lamps.

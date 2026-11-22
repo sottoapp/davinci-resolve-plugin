@@ -10,4 +10,5 @@ spec in the skills is dated and says to verify.
 | [color.md](color.md) | `resolve-real-estate-color` |
 | [delivery-compliance.md](delivery-compliance.md) | `real-estate-delivery-compliance` |
 | [repeatable-workflows.md](repeatable-workflows.md) | `resolve-templates-and-batching`, `resolve-speed-ramps-and-transitions` |
+| [skill-tests.md](skill-tests.md) | baseline tests of the real-estate skills |
 | [video-analyses/](video-analyses/README.md) | the Gemini-watched tutorials |
