@@ -8,8 +8,8 @@
   "plugins": [
     {
       "name": "davinci-resolve",
-      "source": "./",
-      "description": "Control DaVinci Resolve Studio from Claude: vendored MCP server, skill library, review agents and source-media safety hooks.",
+      "source": "./plugin",
+      "description": "Control DaVinci Resolve Studio from Claude: pinned upstream MCP server launcher, skill library, review agents and source-media safety hooks.",
       "category": "video",
       "tags": [
         "davinci-resolve",

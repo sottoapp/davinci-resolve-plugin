@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "davinci-resolve": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/launch-mcp.mjs", "live"],
+      "env": { "DAVINCI_RESOLVE_MCP_UPDATE_CHECK": "0" }
+    },
+    "davinci-resolve-advanced": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/launch-mcp.mjs", "advanced"]
+    }
+  }
+}
