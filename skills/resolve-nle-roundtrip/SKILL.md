@@ -24,7 +24,7 @@ DAW details are unverified. Details and sources: `references/format-matrix.md`.
 ## Before exporting from the source NLE
 Flatten to V1/remove empty tracks, flatten nests, **bake** speed ramps, effects, titles and After Effects comps into
 self-contained media, one frame rate per sequence, media with valid timecode, and export a **flattened reference movie**
-with burned-in or matching-start timecode alongside the file. Avid: dissolves only, avoid audio fades/generated sources,
+with burned-in or matching-start timecode alongside the file. Effects with no verified carry-over (Lumetri, adjustment layers) should be assumed lost: bake them, or keep the grade as a reference. Avid: dissolves only, avoid audio fades/generated sources,
 use MXF/WAVE media. FCPXML: pick an older version if a tool rejects the file.
 
 ## Resolve import settings (set before importing)
