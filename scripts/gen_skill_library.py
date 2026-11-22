@@ -11,11 +11,14 @@ NEW = {  # authored in this repo; everything else is ported from upstream
     "resolve-guide-fairlight", "resolve-guide-deliver", "editing-principles", "editing-interview-documentary",
     "editing-sound-music", "editing-short-form-vertical", "editing-review-feedback",
     "resolve-nle-roundtrip", "resolve-edition-features", "resolve-session-handoff",
+    "realestate-video-editing", "realestate-color-in-resolve", "realestate-delivery-compliance",
+    "resolve-speed-ramps-transitions", "resolve-templates-and-batching",
 }
 GROUPS = [
     ("Learn Resolve itself (application guides)", ["resolve-guide-project-media", "resolve-guide-cut-edit",
         "resolve-guide-color", "resolve-guide-fusion", "resolve-guide-fairlight", "resolve-guide-deliver",
-        "resolve-edition-features"]),
+        "resolve-edition-features", "resolve-speed-ramps-transitions", "resolve-templates-and-batching"]),
+    ("Vertical: real estate (how to edit a specific kind of video)", ["realestate-video-editing", "realestate-color-in-resolve", "realestate-delivery-compliance"]),
     ("Editing craft (principles → Resolve actions)", ["editing-principles", "editing-interview-documentary",
         "editing-sound-music", "editing-short-form-vertical", "editing-review-feedback"]),
     ("Drive Resolve through MCP — orientation & safety", ["resolve-mcp", "resolve-session", "resolve-session-handoff", "resolve-api-reliability"]),

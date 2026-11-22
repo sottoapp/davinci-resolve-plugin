@@ -23,6 +23,9 @@ evals/<case-name>/
 | `sound-` | editing-sound-music |
 | `shortform-` | editing-short-form-vertical |
 | `review-` | editing-review-feedback |
+| `realestate-compliance-` | realestate-delivery-compliance |
+| `realestate-color-` | realestate-color-in-resolve |
+| `realestate-editing-` | realestate-video-editing |
 
 Each case's `prompt.md` frontmatter has `tags: [<skill-name>]`. Run results (workspace, outputs, benchmark) are **not** committed;
 summaries go in `docs/research/skill-eval-*.md`. Still to write: trigger/near-miss cases and cases for the MCP-driving skills.

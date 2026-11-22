@@ -18,6 +18,16 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 | `resolve-guide-fairlight` | New | Use when asked how to clean up or mix audio in Resolve, which Fairlight tool fits a noise problem, how to set up buses and stems, or how to meter loudness. |
 | `resolve-guide-deliver` | New | Use when asked how to export or render from Resolve, which render mode, preset or codec to choose, or why an export came out partial, the wrong version or low quality. |
 | `resolve-edition-features` | New | Use when a task depends on DaVinci Resolve Free versus Studio, such as Neural Engine tools, HDR or Dolby Vision grading, hardware encoding, DCP or IMF output, or external scripting, or when a feature is unexpectedly miss |
+| `resolve-speed-ramps-transitions` | New | Use when building speed ramps, whip or zoom transitions, luma-fade day-to-night changes, motion blur, camera shake or tracked light effects in DaVinci Resolve, or when a ramp looks stuttery, jerky or overdone. |
+| `resolve-templates-and-batching` | New | Use when setting up repeatable Resolve work: project templates, Power Bins, Smart Bins, title and lower-third templates, Fusion macros, PowerGrades, render presets, queue batching, or when choosing between compound, Fusi |
+
+## Vertical: real estate (how to edit a specific kind of video)
+
+| Skill | Origin | Use it for |
+|---|---|---|
+| `realestate-video-editing` | New | Use when editing a property listing video, cinematic home walkthrough, agent introduction, drone or twilight feature, neighborhood video, or vertical social cut for real estate, or when a real estate edit feels slow, gen |
+| `realestate-color-in-resolve` | New | Use when color grading or correcting real estate footage in DaVinci Resolve: blown-out windows, mixed lighting, dull or tinted walls, crooked verticals, wide-angle distortion, drone log footage, twilight exteriors, or ro |
+| `realestate-delivery-compliance` | New | Use when preparing real estate video for the MLS, Zillow, social or an agent website, adding agent branding or text, writing on-screen or voiceover copy, using virtual staging, AI generation or sky replacement, picking m |
 
 ## Editing craft (principles → Resolve actions)
 

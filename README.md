@@ -7,7 +7,8 @@ with a research-backed library of workflow skills, review agents and safety hook
 ```
 .claude-plugin/   plugin.json, marketplace.json
 .mcp.json         live (Python) + advanced/offline (Node) MCP servers
-skills/           32 skills in three layers — index in docs/skill-library.md
+skills/           40 skills in four layers — index in docs/skill-library.md
+                    realestate-*     vertical know-how (editing, colour, delivery/compliance)
                     resolve-guide-*  Resolve itself (manual-based app guides)
                     editing-*        editing craft mapped to Resolve actions
                     resolve-*, …     driving Resolve through the MCP server
