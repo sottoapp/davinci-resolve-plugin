@@ -1,6 +1,6 @@
 ---
 name: resolve-api-reliability
-description: Guardrails for any DaVinci Resolve scripting or MCP call that mutates state — the scripting API fails silently (False/None, "success" that changed nothing), is page- and UI-state-sensitive, hangs behind modal dialogs, and differs per patch build. Use before bulk edits, imports, property/metadata writes, render queueing, gallery/still grabs, Fairlight inserts, headless or unattended runs, or whenever a Resolve call "worked" but the result looks wrong, a call hangs, or someone asks "is X possible in Resolve 18/19/20/21". Also use when planning an automation that must be re-runnable.
+description: Use when a Resolve scripting or MCP call returns False or None or succeeds without changing anything, a call hangs, before bulk mutations or unattended headless runs, or when asked whether a feature exists on a given Resolve build.
 ---
 
 # Resolve API reliability

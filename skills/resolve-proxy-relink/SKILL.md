@@ -1,6 +1,6 @@
 ---
 name: resolve-proxy-relink
-description: Proxy media and relink workflows in DaVinci Resolve — choosing proxy codecs, generating or linking external proxies, toggling proxy vs original, relinking offline media by verified identifiers, and the "originals online" gate before color and delivery. Use when editing is slow, media shows offline, drives or folders moved, proxies need to be matched to camera originals, or before rendering to confirm no proxy is leaking into the master. Different from resolve-conform (interchange conforms).
+description: Use when editing is slow, media shows offline, drives or folders moved, proxies must be linked to originals, or before rendering to confirm no proxy leaks into the master.
 ---
 
 # Proxy and relink

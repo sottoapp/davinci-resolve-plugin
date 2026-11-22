@@ -1,6 +1,6 @@
 ---
 name: resolve-mcp
-description: Orientation and index for DaVinci Resolve MCP work — grading, editing, conforming, delivery, media analysis, and .drp/.drt/.drx file work, live in a running Resolve or offline with none open. Load this for a map of the domain skills, the live-vs-offline servers, and the cross-cutting safety rules. The per-domain skills (resolve-color / resolve-edit / resolve-conform / resolve-delivery / resolve-media-analysis) carry the depth and self-trigger on their own descriptions; use this as the map, or when a task spans several domains.
+description: Use when starting any DaVinci Resolve task to find the right skill, choose between the live and offline servers, or when a task spans several Resolve domains.
 ---
 
 # DaVinci Resolve MCP — Index

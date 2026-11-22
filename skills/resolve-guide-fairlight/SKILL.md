@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-fairlight
-description: Teaches the DaVinci Resolve Fairlight page — clips vs tracks vs buses, clip/track/bus EQ and dynamics, the dialogue cleanup order (edit, EQ, gate/expander, DeHummer, noise reduction, Voice Isolation, Dialogue Separator, sample-level declick, cache/bounce), mixing workflow, loudness metering, automation, ADR, stems export. Use when the user asks how to clean up or mix audio in Resolve, which audio tool to use, why dialogue sounds thin or artifacty, how to set up buses, or how to meter loudness. For MCP-driven audio/Fairlight work use resolve-audio; for loudness specs use resolve-delivery-specs.
+description: Use when asked how to clean up or mix audio in Resolve, which Fairlight tool fits a noise problem, how to set up buses and stems, or how to meter loudness.
 ---
 
 # Resolve guide: Fairlight

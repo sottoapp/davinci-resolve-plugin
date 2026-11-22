@@ -13,3 +13,5 @@ affects safety, prefer `resolve_control api_truth` and the vendored kernels.
 | [editing-craft.md](editing-craft.md) | `editing-*` (principles, interview-documentary, sound-music, short-form-vertical, review-feedback) |
 | [video-analyses/](video-analyses/README.md) | Gemini-watched tutorial videos behind several skills |
 | [claude-plugin-authoring.md](claude-plugin-authoring.md) | `authoring-resolve-skills`, plugin layout, hooks, marketplace |
+
+| [skill-baseline-tests.md](skill-baseline-tests.md) | RED/GREEN subagent tests of the discipline-style skills |

@@ -1,6 +1,6 @@
 ---
 name: resolve-tighten-recording
-description: Tightening one long single-take recording — talking-head, screencast, tutorial, podcast video — by removing dead air in the DaVinci Resolve MCP. Apply when asked to tighten a recording, remove silences or dead air, cut the pauses out of a long take, or turn a raw one-take recording into a first cut. The subtractive counterpart to resolve-rough-cut, which selects shots from many clips; this skill removes time from one clip.
+description: Use when asked to tighten a long single-take recording, remove dead air or silences, or turn a raw talking-head, screencast, tutorial or podcast video into a first cut.
 ---
 
 # Resolve Tighten Recording

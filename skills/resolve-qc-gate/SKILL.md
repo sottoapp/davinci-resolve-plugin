@@ -1,6 +1,6 @@
 ---
 name: resolve-qc-gate
-description: Run a final exception-driven QC gate on a DaVinci Resolve timeline and its renders before delivery — offline/proxy status, frame rate and timecode, conform conflicts, color-management state, levels/gamut, audio loudness and true peak, caption integrity, render codec/tags, checksums — and produce a machine- and human-readable report. Use when the user asks "is this ready to deliver", "QC this", "pre-flight the render", "check the master", or before any final export or hand-off.
+description: Use when asked whether a timeline or render is ready to deliver, to QC or pre-flight a master, or before any final export or hand-off.
 ---
 
 # Final QC gate

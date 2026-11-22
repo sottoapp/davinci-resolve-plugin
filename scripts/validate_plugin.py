@@ -36,8 +36,16 @@ for skill in sorted((ROOT / "skills").iterdir()):
     desc = fm.get("description", "")
     if not desc:
         errors.append(f"{skill.name}: empty description")
-    elif len(desc) > 1536:
-        warnings.append(f"{skill.name}: description {len(desc)} chars (>1536 truncates)")
+    else:
+        if not desc.startswith("Use when"):
+            errors.append(f"{skill.name}: description must start with 'Use when' (triggers only, no workflow summary)")
+        if len(desc) > 1024:
+            errors.append(f"{skill.name}: description {len(desc)} chars (>1024)")
+        elif len(desc) > 500:
+            warnings.append(f"{skill.name}: description {len(desc)} chars (aim <=500)")
+    words = len(text.split("---", 2)[2].split())
+    if words > 700:
+        warnings.append(f"{skill.name}: {words} words (aim <500; move heavy reference to references/)")
     if text.count("\n") > 500:
         warnings.append(f"{skill.name}: {text.count(chr(10))} lines (>500)")
     for ref in xref.findall(text):

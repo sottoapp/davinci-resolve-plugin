@@ -1,6 +1,6 @@
 ---
 name: editing-principles
-description: Core film and video editing craft translated into concrete DaVinci Resolve actions — Walter Murch's Rule of Six (emotion, story, rhythm, eye-trace, screen plane, spatial continuity) as a decision filter, why cuts work, cut types (straight, match, match-on-action, jump, cutaway, insert, J-cut, L-cut, smash), the 180-degree rule and coverage, taking the right take, pacing passes, and when to use transitions. Use whenever the user asks how to cut a scene, why an edit feels wrong, how to pace or structure a cut, which cut or transition to use, or wants an AI edit judged by editorial standards — in any genre — and as the craft lens before restructuring a timeline with resolve-edit.
+description: Use when deciding how to cut a scene, why an edit feels wrong, which cut or transition fits, how to pace or structure a cut, or when judging an edit against editorial standards.
 ---
 
 # Editing principles in Resolve

@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-fusion
-description: Teaches the DaVinci Resolve Fusion page — node-graph compositing (MediaIn/MediaOut, Merge input roles, Transform, Background, masks, Text+, trackers, Delta/Ultra keyer, the 3D system), Fusion clips vs Fusion compositions vs Fusion effects on the Edit page, caching and performance, and common mistakes. Use when the user asks how to composite, key green screen, track and attach graphics, build animated titles, or why a Fusion comp is blank or slow. For driving Fusion comps through MCP use resolve-fusion.
+description: Use when asked how to composite, key green screen, track and attach graphics or build animated titles on Resolve's Fusion page, or why a Fusion comp is blank or slow.
 ---
 
 # Resolve guide: Fusion

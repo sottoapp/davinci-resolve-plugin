@@ -1,6 +1,6 @@
 ---
 name: resolve-conform
-description: Conforming, relinking, and finishing prep in the DaVinci Resolve MCP. Apply when importing/relinking editorial, checking a conform against a reference, repairing reversed/retimed subclips, tracing grades across a re-conform, building relink plans, or QCing a conformed timeline frame-by-frame — live in a running Resolve OR offline against .drt/.drp files and the project DB. Routes to the live conform tools, the offline conform QC engine, and the online-editor craft skill.
+description: Use when importing or relinking editorial, checking a conform against a reference, repairing retimed or reversed subclips, tracing grades across a re-conform, or QCing a conformed timeline through the MCP, live or offline on .drt or .drp files.
 ---
 
 # Resolve Conform / Interchange

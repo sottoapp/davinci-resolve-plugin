@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-color
-description: Teaches the DaVinci Resolve Color page as a colorist works — page layout, scopes (waveform, RGB parade, vectorscope, histogram), primaries (lift/gamma/gain/offset, log wheels, contrast/pivot, saturation, color boost), curves, qualifiers and HSL keying, power windows, tracking and Magic Mask, node-tree structure (serial, parallel, layer mixer, compound nodes), versions/stills/PowerGrades, group grading, shot matching, and the balance-then-look order of operations. Use when the user asks how to grade or match shots in Resolve, what a tool or scope does, how to structure nodes, or why a grade looks wrong. For color-management setup use resolve-color-management; for applying grades via MCP use resolve-color.
+description: Use when asked how to grade or match shots on Resolve's Color page, what a scope or tool does, how to structure nodes, or why a grade looks wrong.
 ---
 
 # Resolve guide: the Color page

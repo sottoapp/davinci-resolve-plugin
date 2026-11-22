@@ -1,6 +1,6 @@
 ---
 name: editing-interview-documentary
-description: Editing craft for interviews, documentaries, talking-head and dialogue-driven video in DaVinci Resolve — organizing and logging, string-outs and selects, paper edit and radio cut, building dialogue first, J/L cuts, using B-roll with purpose, keeping pauses, room tone, and ethical checks (context, fairness, misleading juxtaposition). Use when the user is cutting an interview, documentary, corporate story, podcast video, testimonial or any story built from spoken material, asks how to structure it, how to use B-roll, or how to avoid misrepresenting a speaker. Pairs with resolve-transcript-assembly for tool-driven assembly.
+description: Use when cutting an interview, documentary, testimonial, podcast video or other story built from spoken material, or deciding how to structure it, use B-roll, or avoid misrepresenting a speaker.
 ---
 
 # Interview and documentary editing

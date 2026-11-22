@@ -1,6 +1,6 @@
 ---
 name: resolve-session
-description: Start a Resolve working session — connect, confirm the bridge and edition, open the project, and report timeline and media-pool state before any editing begins.
+description: Use when starting a Resolve working session before any editing, or when the connection, edition or project state is unclear.
 disable-model-invocation: true
 ---
 

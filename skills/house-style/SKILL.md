@@ -1,6 +1,6 @@
 ---
 name: house-style
-description: The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. Load before assembling, restructuring, or refining any cut so the same note does not have to be given twice.
+description: Use when assembling, restructuring or refining a cut and the project's recorded editorial preferences and past corrections should apply.
 user-invocable: false
 ---
 

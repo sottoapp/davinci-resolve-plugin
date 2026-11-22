@@ -1,6 +1,6 @@
 ---
 name: resolve-subtitles
-description: Create, time, style, review and export subtitles and closed captions in DaVinci Resolve — transcript-to-subtitle generation, per-language subtitle tracks, SDH/forced/accessibility variants, reading-speed and line-length QC, animated subtitle presets, and SRT/WebVTT/TTML/SCC/burn-in/DCP export. Use for any request mentioning subtitles, captions, closed captions, SRT, localization, "burn in captions", or word-highlight text. Do not use for titles/lower-thirds (resolve-fusion).
+description: Use when creating, timing, styling, reviewing or exporting subtitles and captions, SRT, WebVTT or TTML files, SDH or forced narrative, or burning in captions.
 ---
 
 # Subtitles and captions

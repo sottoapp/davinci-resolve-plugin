@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-cut-edit
-description: Teaches the DaVinci Resolve Cut page and Edit page as an editor uses them — page layout, Source Tape, Sync Bin, source/timeline viewers, three-point and four-point editing, insert/overwrite/replace/fit-to-fill/place-on-top/ripple-overwrite, track targeting, Auto Select, Sync Lock, linked selection, snapping, trim modes (ripple, roll, slip, slide, dynamic trim), multicam, compound/nested/Fusion/adjustment clips, speed changes, transitions, titles, markers vs flags, and default shortcuts. Use when the user asks how to do an edit operation in Resolve, which tool to use, why an edit went wrong, or wants shortcuts. Also tells you which of these the scripting API cannot do, so you give UI steps instead.
+description: Use when asked how to perform an edit on Resolve's Cut or Edit page, which edit or trim tool to use, why an edit misbehaved, or for keyboard shortcuts, including when the scripting API cannot do the requested edit.
 ---
 
 # Resolve guide: Cut and Edit pages

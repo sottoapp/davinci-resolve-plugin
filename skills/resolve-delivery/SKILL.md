@@ -1,6 +1,6 @@
 ---
 name: resolve-delivery
-description: Delivery, rendering, and deliverable QC in the DaVinci Resolve MCP. Apply when preparing render jobs, validating render settings, QCing a finished render against a spec (video/loudness/blanking/completeness), building or reconciling a render manifest, expanding texted/textless/stems/slate deliverables, verifying media ingest, or producing a provenance/episode report — live in a running Resolve OR offline against rendered files and the project DB. Routes to the live render tools, the offline deliverable/media/provenance tools, and the deliverables craft skills.
+description: Use when preparing or validating render jobs, QCing a finished render against a spec, building a render manifest, expanding texted, textless or stems deliverables, or reporting provenance through the MCP, live or offline.
 ---
 
 # Resolve Delivery / Deliverable QC

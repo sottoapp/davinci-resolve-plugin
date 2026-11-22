@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-deliver
-description: Explains the DaVinci Resolve Deliver page workflow — render settings panel, presets (YouTube, Vimeo, TikTok, H.264/H.265, ProRes, Custom Export), single clip vs individual clips, In/Out range, render queue, hardware encoding, proxy and cache toggles, and a pre-render checklist. Use when the user asks how to export or render from Resolve, which render mode or codec to choose, why an export is wrong (partial, wrong version, proxy quality), or how to queue several deliverables. For exact platform/broadcast/DCP specs use resolve-delivery-specs; to queue jobs via MCP use resolve-delivery.
+description: Use when asked how to export or render from Resolve, which render mode, preset or codec to choose, or why an export came out partial, the wrong version or low quality.
 ---
 
 # Resolve guide: the Deliver page

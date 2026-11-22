@@ -1,6 +1,6 @@
 ---
 name: editing-sound-music
-description: Sound design and music editing craft for video edited in DaVinci Resolve — building the sound world (dialogue, room tone, ambience, Foley, effects, music), using sound to hide or motivate cuts, choosing music for emotional purpose, editing music at phrase boundaries, ducking, silence, stems and spotting. Use when the user asks how to make an edit feel professional with sound, how to pick, cut, extend or duck music, how to smooth a dialogue edit, or how to organize audio tracks before the mix. Mixing mechanics are in resolve-guide-fairlight.
+description: Use when choosing, cutting, extending or ducking music, smoothing dialogue edits with room tone or ambience, or organizing audio tracks before a mix.
 ---
 
 # Sound and music editing

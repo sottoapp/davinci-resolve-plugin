@@ -1,6 +1,6 @@
 ---
 name: resolve-color
-description: Color grading and look work in the DaVinci Resolve MCP. Apply when grading, correcting, matching shots, developing looks, or applying/modifying LUTs, CDLs, DRX grades, or copied grades — live in a running Resolve OR offline against .drx/.drp files. Routes to the live Python color tools, the offline advanced grading/QC catalog, and the project's color craft guidance.
+description: Use when grading, matching shots, building looks, or applying LUTs, CDLs, DRX files or copied grades through the MCP, live in Resolve or offline on .drx or .drp files.
 ---
 
 # Resolve Color / Grade

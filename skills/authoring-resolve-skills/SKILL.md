@@ -1,6 +1,6 @@
 ---
 name: authoring-resolve-skills
-description: How to add or revise skills, agents and hooks in this DaVinci Resolve plugin — SKILL.md frontmatter and trigger-description writing, progressive disclosure with references/, scoped MCP tool names, safety hooks, eval cases, and versioning. Use when the user wants to create a new Resolve skill, fix a skill that does not trigger, extend the skill library, or package/release the plugin. Pairs with the skill-creator skill for the draft→test→iterate loop.
+description: Use when adding, fixing or releasing skills, agents, hooks or manifests in this Resolve plugin, or when a skill in it fails to trigger.
 ---
 
 # Authoring skills for this plugin

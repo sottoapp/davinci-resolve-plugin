@@ -1,6 +1,6 @@
 ---
 name: resolve-audio
-description: Audio and Fairlight work in the DaVinci Resolve MCP. Apply when setting audio properties, syncing audio, isolating voice, generating subtitles, planning Fairlight track/bus layouts, checking loudness, routing buses, or splitting/trimming/converting audio — live in a running Resolve OR offline. Routes to the live audio tools, the offline audio planning/bus-routing tools, and the Fairlight kernel.
+description: Use when setting audio properties, syncing audio, isolating voice, generating subtitles from audio, planning Fairlight tracks and buses, or checking loudness and routing through the MCP, live or offline.
 ---
 
 # Resolve Audio / Fairlight

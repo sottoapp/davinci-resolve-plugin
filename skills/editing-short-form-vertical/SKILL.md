@@ -1,6 +1,6 @@
 ---
 name: editing-short-form-vertical
-description: Craft and Resolve workflow for vertical short-form video (Reels, YouTube Shorts, TikTok) — duplicating a horizontal timeline to 9:16, reframing and Smart Reframe, safe areas for captions, hook-first structure, pacing, caption and sound as rhythm, and a phone check. Use when the user wants a vertical cut, a social clip from long-form footage, says Reels/Shorts/TikTok/9:16, or asks how to make a short video feel native. For footage-to-rough-cut automation use resolve-rough-cut; for removing dead air use resolve-tighten-recording.
+description: Use when making a vertical 9:16 cut for Reels, Shorts or TikTok, repurposing long-form footage for social, or reframing a horizontal timeline.
 ---
 
 # Short-form vertical editing

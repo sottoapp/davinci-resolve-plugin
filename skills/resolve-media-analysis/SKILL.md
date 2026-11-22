@@ -1,6 +1,6 @@
 ---
 name: resolve-media-analysis
-description: Media intelligence layer for the DaVinci Resolve MCP. Uses FFprobe, FFmpeg, and optionally Whisper to READ and ANALYZE source media — never modify, transcode, convert, or create derivatives. Provides the MCP with full context of what footage actually is so it can take informed actions within Resolve.
+description: Use when the content of footage must be understood before acting, by reading, probing or transcribing source media with FFprobe, FFmpeg or Whisper without modifying or transcoding it.
 ---
 
 # Resolve Media Analysis

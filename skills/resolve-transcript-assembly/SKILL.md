@@ -1,6 +1,6 @@
 ---
 name: resolve-transcript-assembly
-description: Build selects and story assemblies in DaVinci Resolve from transcripts, markers or editor notes — interview sound-bite search, speaker-labelled quotes, structured SELECT/B-ROLL/FACT CHECK/LEGAL markers, selects timelines, and reversible draft assemblies. Use for documentary, interview, corporate and podcast-video edits when the user has a transcript, wants "pull the best quotes", "assemble from these notes", or "turn these markers into a rough cut". For shot selection from raw BTS footage use resolve-rough-cut; for removing dead air from one take use resolve-tighten-recording.
+description: Use when assembling selects or a story cut from transcripts, markers or editor notes, pulling the best quotes, or turning notes into a rough cut.
 ---
 
 # Transcript / marker / notes-driven assembly

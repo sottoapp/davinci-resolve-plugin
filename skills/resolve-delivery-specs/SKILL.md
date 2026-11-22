@@ -1,6 +1,6 @@
 ---
 name: resolve-delivery-specs
-description: Translate a delivery target — YouTube/web, broadcast (EBU R128 / ATSC), DCP, ProRes/DNxHR master or archive — into exact Resolve render settings and a pass/fail spec, including loudness, codec, color tags, audio layout and file naming. Use when the user says "export for YouTube/broadcast/DCP/archive", asks what settings a deliverable needs, or wants to compare a render preset against a written spec. Complements resolve-delivery (queueing, QC execution); this skill supplies the spec knowledge.
+description: Use when asked to export for YouTube, broadcast, DCP or a ProRes or DNxHR master, to compare a render preset against a written spec, or when loudness, codec or color-tag requirements for a deliverable are unclear.
 ---
 
 # Delivery specs

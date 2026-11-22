@@ -1,6 +1,6 @@
 ---
 name: resolve-fusion
-description: Fusion composition work in the DaVinci Resolve MCP. Apply when building or editing Fusion comps — titles, motion graphics, VFX, merges, masks, trackers — on a timeline item live in a running Resolve OR authoring a .comp declaratively offline. Routes to the live fusion_comp tools and the offline fusion authoring tool.
+description: Use when building or editing Fusion comps such as titles, motion graphics, merges, masks or trackers on a timeline item through the MCP, or authoring a .comp file offline.
 ---
 
 # Resolve Fusion

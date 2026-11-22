@@ -13,8 +13,10 @@ skills/           32 skills in three layers — index in docs/skill-library.md
                     resolve-*, …     driving Resolve through the MCP server
 agents/           cut-reviewer, grade-match-verifier, drift-guard-reviewer
 hooks/            source-media guard + frame-evidence guard
+bin/              resolve-doctor (install diagnosis; added to PATH)
 mcp-server/       vendored upstream, verbatim (see UPSTREAM.md)
-docs/             skill-library.md, research/ (sourced digests, Gemini video analyses)
+docs/             README index → ARCHITECTURE, skill-library, plugin-components,
+                  skill-backlog, research/ (sourced digests, Gemini analyses, baseline tests)
 scripts/          validate_plugin.py, gen_skill_library.py
 evals/            trigger/behavior cases (to be written)
 ```
@@ -27,5 +29,6 @@ evals/            trigger/behavior cases (to be written)
 4. Start Resolve with a project open, then ask Claude to start a session (`resolve-session`).
 
 ## Status
-Validated statically only (`python3 scripts/validate_plugin.py`; hooks unit-tested by hand).
-**Not yet run against a live Resolve**, and `claude plugin validate`/`eval` have not been run.
+`python3 scripts/validate_plugin.py` and `claude plugin validate .` both pass; the guard hooks were unit-tested by hand;
+three skills were baseline-tested with subagents (`docs/research/skill-baseline-tests.md`).
+**Not yet run against a live Resolve**, and `claude plugin eval` has not been run.

@@ -11,80 +11,80 @@ How the layers fit: the *guide* and *craft* skills know Resolve and editing; the
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-guide-project-media` | New | Explains how DaVinci Resolve itself handles projects and media — Project Manager and databases (disk vs PostgreSQL), project settings, timeline resolution and frame rate, the Media page, bins/metadata/Smart Bins, optimiz |
-| `resolve-guide-cut-edit` | New | Teaches the DaVinci Resolve Cut page and Edit page as an editor uses them — page layout, Source Tape, Sync Bin, source/timeline viewers, three-point and four-point editing, insert/overwrite/replace/fit-to-fill/place-on-t |
-| `resolve-guide-color` | New | Teaches the DaVinci Resolve Color page as a colorist works — page layout, scopes (waveform, RGB parade, vectorscope, histogram), primaries (lift/gamma/gain/offset, log wheels, contrast/pivot, saturation, color boost), cu |
-| `resolve-guide-fusion` | New | Teaches the DaVinci Resolve Fusion page — node-graph compositing (MediaIn/MediaOut, Merge input roles, Transform, Background, masks, Text+, trackers, Delta/Ultra keyer, the 3D system), Fusion clips vs Fusion compositions |
-| `resolve-guide-fairlight` | New | Teaches the DaVinci Resolve Fairlight page — clips vs tracks vs buses, clip/track/bus EQ and dynamics, the dialogue cleanup order (edit, EQ, gate/expander, DeHummer, noise reduction, Voice Isolation, Dialogue Separator,  |
-| `resolve-guide-deliver` | New | Explains the DaVinci Resolve Deliver page workflow — render settings panel, presets (YouTube, Vimeo, TikTok, H.264/H.265, ProRes, Custom Export), single clip vs individual clips, In/Out range, render queue, hardware enco |
+| `resolve-guide-project-media` | New | Use when asked how Resolve handles projects, databases, media and archives, how to set up a project, why playback is slow, what proxy, optimized media or render cache mean, or how to move, relink or share a project. |
+| `resolve-guide-cut-edit` | New | Use when asked how to perform an edit on Resolve's Cut or Edit page, which edit or trim tool to use, why an edit misbehaved, or for keyboard shortcuts, including when the scripting API cannot do the requested edit. |
+| `resolve-guide-color` | New | Use when asked how to grade or match shots on Resolve's Color page, what a scope or tool does, how to structure nodes, or why a grade looks wrong. |
+| `resolve-guide-fusion` | New | Use when asked how to composite, key green screen, track and attach graphics or build animated titles on Resolve's Fusion page, or why a Fusion comp is blank or slow. |
+| `resolve-guide-fairlight` | New | Use when asked how to clean up or mix audio in Resolve, which Fairlight tool fits a noise problem, how to set up buses and stems, or how to meter loudness. |
+| `resolve-guide-deliver` | New | Use when asked how to export or render from Resolve, which render mode, preset or codec to choose, or why an export came out partial, the wrong version or low quality. |
 
 ## Editing craft (principles → Resolve actions)
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `editing-principles` | New | Core film and video editing craft translated into concrete DaVinci Resolve actions — Walter Murch's Rule of Six (emotion, story, rhythm, eye-trace, screen plane, spatial continuity) as a decision filter, why cuts work, c |
-| `editing-interview-documentary` | New | Editing craft for interviews, documentaries, talking-head and dialogue-driven video in DaVinci Resolve — organizing and logging, string-outs and selects, paper edit and radio cut, building dialogue first, J/L cuts, using |
-| `editing-sound-music` | New | Sound design and music editing craft for video edited in DaVinci Resolve — building the sound world (dialogue, room tone, ambience, Foley, effects, music), using sound to hide or motivate cuts, choosing music for emotion |
-| `editing-short-form-vertical` | New | Craft and Resolve workflow for vertical short-form video (Reels, YouTube Shorts, TikTok) — duplicating a horizontal timeline to 9:16, reframing and Smart Reframe, safe areas for captions, hook-first structure, pacing, ca |
-| `editing-review-feedback` | New | How to review a cut and handle feedback on a DaVinci Resolve edit — internal review passes (picture only, sound only, muted, full-screen, phone), timecoded notes classified as story/performance/rhythm/continuity/sound/im |
+| `editing-principles` | New | Use when deciding how to cut a scene, why an edit feels wrong, which cut or transition fits, how to pace or structure a cut, or when judging an edit against editorial standards. |
+| `editing-interview-documentary` | New | Use when cutting an interview, documentary, testimonial, podcast video or other story built from spoken material, or deciding how to structure it, use B-roll, or avoid misrepresenting a speaker. |
+| `editing-sound-music` | New | Use when choosing, cutting, extending or ducking music, smoothing dialogue edits with room tone or ambience, or organizing audio tracks before a mix. |
+| `editing-short-form-vertical` | New | Use when making a vertical 9:16 cut for Reels, Shorts or TikTok, repurposing long-form footage for social, or reframing a horizontal timeline. |
+| `editing-review-feedback` | New | Use when reviewing or critiquing a cut, organizing review notes, receiving client or director feedback, or setting up a revision and versioning routine. |
 
 ## Drive Resolve through MCP — orientation & safety
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-mcp` | Upstream | Orientation and index for DaVinci Resolve MCP work — grading, editing, conforming, delivery, media analysis, and .drp/.drt/.drx file work, live in a running Resolve or offline with none open. |
-| `resolve-session` | Upstream | Start a Resolve working session — connect, confirm the bridge and edition, open the project, and report timeline and media-pool state before any editing begins. |
-| `resolve-api-reliability` | New | Guardrails for any DaVinci Resolve scripting or MCP call that mutates state — the scripting API fails silently (False/None, "success" that changed nothing), is page- and UI-state-sensitive, hangs behind modal dialogs, an |
+| `resolve-mcp` | Upstream | Use when starting any DaVinci Resolve task to find the right skill, choose between the live and offline servers, or when a task spans several Resolve domains. |
+| `resolve-session` | Upstream | Use when starting a Resolve working session before any editing, or when the connection, edition or project state is unclear. |
+| `resolve-api-reliability` | New | Use when a Resolve scripting or MCP call returns False or None or succeeds without changing anything, a call hangs, before bulk mutations or unattended headless runs, or when asked whether a feature exists on a given Res |
 
 ## MCP — ingest & prep
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-media-pool` | Upstream | Media pool ingest and organization in the DaVinci Resolve MCP. |
-| `resolve-media-analysis` | Upstream | Media intelligence layer for the DaVinci Resolve MCP. |
-| `resolve-proxy-relink` | New | Proxy media and relink workflows in DaVinci Resolve — choosing proxy codecs, generating or linking external proxies, toggling proxy vs original, relinking offline media by verified identifiers, and the "originals online" |
+| `resolve-media-pool` | Upstream | Use when importing media, organizing or relinking clips, normalizing metadata, setting clip marks, building multicam timelines, or inventorying a card before ingest through the MCP. |
+| `resolve-media-analysis` | Upstream | Use when the content of footage must be understood before acting, by reading, probing or transcribing source media with FFprobe, FFmpeg or Whisper without modifying or transcoding it. |
+| `resolve-proxy-relink` | New | Use when editing is slow, media shows offline, drives or folders moved, proxies must be linked to originals, or before rendering to confirm no proxy leaks into the master. |
 
 ## MCP — edit
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-edit` | Upstream | Editing, cutting, trimming, pacing, and timeline restructuring in the DaVinci Resolve MCP. |
-| `resolve-rough-cut` | Upstream | Assembling a short-form social rough cut from raw behind-the-scenes or vlog footage in the DaVinci Resolve MCP. |
-| `resolve-tighten-recording` | Upstream | Tightening one long single-take recording — talking-head, screencast, tutorial, podcast video — by removing dead air in the DaVinci Resolve MCP. |
-| `resolve-transcript-assembly` | New | Build selects and story assemblies in DaVinci Resolve from transcripts, markers or editor notes — interview sound-bite search, speaker-labelled quotes, structured SELECT/B-ROLL/FACT CHECK/LEGAL markers, selects timelines |
-| `house-style` | Upstream | The editorial and finishing preferences this project's work is judged against — cut rhythm, shot selection, delivery conventions, and the corrections that have already been given. |
+| `resolve-edit` | Upstream | Use when duplicating or moving clips, copying ranges, building variants, tightening or restructuring a cut, editing selects, or producing an editorial changelist through the MCP, live or offline on .drt files. |
+| `resolve-rough-cut` | Upstream | Use when asked for a rough cut, first cut or assembly from a folder of raw behind-the-scenes or vlog footage destined for Reels, TikTok or Shorts. |
+| `resolve-tighten-recording` | Upstream | Use when asked to tighten a long single-take recording, remove dead air or silences, or turn a raw talking-head, screencast, tutorial or podcast video into a first cut. |
+| `resolve-transcript-assembly` | New | Use when assembling selects or a story cut from transcripts, markers or editor notes, pulling the best quotes, or turning notes into a rough cut. |
+| `house-style` | Upstream | Use when assembling, restructuring or refining a cut and the project's recorded editorial preferences and past corrections should apply. |
 
 ## MCP — conform
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-conform` | Upstream | Conforming, relinking, and finishing prep in the DaVinci Resolve MCP. |
+| `resolve-conform` | Upstream | Use when importing or relinking editorial, checking a conform against a reference, repairing retimed or reversed subclips, tracing grades across a re-conform, or QCing a conformed timeline through the MCP, live or offlin |
 
 ## MCP — color
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-color-management` | New | Decide and verify the color pipeline in DaVinci Resolve before any grading — Resolve Color Management (RCM) vs ACES, input/timeline/output color spaces, camera IDTs, tone mapping, HDR vs SDR output, LUT placement, and do |
-| `resolve-color` | Upstream | Color grading and look work in the DaVinci Resolve MCP. |
+| `resolve-color-management` | New | Use when setting up or auditing a project's color pipeline (RCM or ACES), assigning camera input transforms, mixing LUTs with managed footage, or when footage looks washed out, crushed or double-converted. |
+| `resolve-color` | Upstream | Use when grading, matching shots, building looks, or applying LUTs, CDLs, DRX files or copied grades through the MCP, live in Resolve or offline on .drx or .drp files. |
 
 ## MCP — audio, captions & Fusion
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-audio` | Upstream | Audio and Fairlight work in the DaVinci Resolve MCP. |
-| `resolve-subtitles` | New | Create, time, style, review and export subtitles and closed captions in DaVinci Resolve — transcript-to-subtitle generation, per-language subtitle tracks, SDH/forced/accessibility variants, reading-speed and line-length  |
-| `resolve-fusion` | Upstream | Fusion composition work in the DaVinci Resolve MCP. |
+| `resolve-audio` | Upstream | Use when setting audio properties, syncing audio, isolating voice, generating subtitles from audio, planning Fairlight tracks and buses, or checking loudness and routing through the MCP, live or offline. |
+| `resolve-subtitles` | New | Use when creating, timing, styling, reviewing or exporting subtitles and captions, SRT, WebVTT or TTML files, SDH or forced narrative, or burning in captions. |
+| `resolve-fusion` | Upstream | Use when building or editing Fusion comps such as titles, motion graphics, merges, masks or trackers on a timeline item through the MCP, or authoring a .comp file offline. |
 
 ## MCP — deliver & QC
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `resolve-delivery-specs` | New | Translate a delivery target — YouTube/web, broadcast (EBU R128 / ATSC), DCP, ProRes/DNxHR master or archive — into exact Resolve render settings and a pass/fail spec, including loudness, codec, color tags, audio layout a |
-| `resolve-delivery` | Upstream | Delivery, rendering, and deliverable QC in the DaVinci Resolve MCP. |
-| `resolve-qc-gate` | New | Run a final exception-driven QC gate on a DaVinci Resolve timeline and its renders before delivery — offline/proxy status, frame rate and timecode, conform conflicts, color-management state, levels/gamut, audio loudness  |
+| `resolve-delivery-specs` | New | Use when asked to export for YouTube, broadcast, DCP or a ProRes or DNxHR master, to compare a render preset against a written spec, or when loudness, codec or color-tag requirements for a deliverable are unclear. |
+| `resolve-delivery` | Upstream | Use when preparing or validating render jobs, QCing a finished render against a spec, building a render manifest, expanding texted, textless or stems deliverables, or reporting provenance through the MCP, live or offline |
+| `resolve-qc-gate` | New | Use when asked whether a timeline or render is ready to deliver, to QC or pre-flight a master, or before any final export or hand-off. |
 
 ## Meta
 
 | Skill | Origin | Use it for |
 |---|---|---|
-| `authoring-resolve-skills` | New | How to add or revise skills, agents and hooks in this DaVinci Resolve plugin — SKILL.md frontmatter and trigger-description writing, progressive disclosure with references/, scoped MCP tool names, safety hooks, eval case |
+| `authoring-resolve-skills` | New | Use when adding, fixing or releasing skills, agents, hooks or manifests in this Resolve plugin, or when a skill in it fails to trigger. |

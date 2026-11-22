@@ -1,6 +1,6 @@
 ---
 name: resolve-edit
-description: Editing, cutting, trimming, pacing, and timeline restructuring in the DaVinci Resolve MCP. Apply when duplicating/moving clips, copying ranges, building variants, tightening or restructuring a cut, editing selects, or generating an editorial changelist/turnover — live in a running Resolve OR offline against .drt timeline files. Routes to the live edit tools, the offline editorial tools, and the project's editorial craft guidance.
+description: Use when duplicating or moving clips, copying ranges, building variants, tightening or restructuring a cut, editing selects, or producing an editorial changelist through the MCP, live or offline on .drt files.
 ---
 
 # Resolve Timeline Edit

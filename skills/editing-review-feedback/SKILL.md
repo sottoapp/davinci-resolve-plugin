@@ -1,6 +1,6 @@
 ---
 name: editing-review-feedback
-description: How to review a cut and handle feedback on a DaVinci Resolve edit — internal review passes (picture only, sound only, muted, full-screen, phone), timecoded notes classified as story/performance/rhythm/continuity/sound/image/technical, briefing external reviewers, separating preference from comprehension problems, applying notes safely with versioned timelines and exports. Use when the user asks to review or critique a timeline, wants notes organized, got client or director feedback, or needs a revision workflow. Combine with the cut-reviewer agent to look at frames.
+description: Use when reviewing or critiquing a cut, organizing review notes, receiving client or director feedback, or setting up a revision and versioning routine.
 ---
 
 # Review and feedback

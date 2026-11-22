@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-project-media
-description: Explains how DaVinci Resolve itself handles projects and media — Project Manager and databases (disk vs PostgreSQL), project settings, timeline resolution and frame rate, the Media page, bins/metadata/Smart Bins, optimized media vs proxy media vs render cache, relinking and reconform, Live Save, project backups, .drp vs .dra archives, and multi-user collaboration. Use when the user asks how Resolve works, how to set up a project, why playback is slow, what a proxy or cache is, how to move or archive a project, or how to organize footage — before touching the API. For doing it via MCP see resolve-session, resolve-media-pool and resolve-proxy-relink.
+description: Use when asked how Resolve handles projects, databases, media and archives, how to set up a project, why playback is slow, what proxy, optimized media or render cache mean, or how to move, relink or share a project.
 ---
 
 # Resolve guide: projects and media

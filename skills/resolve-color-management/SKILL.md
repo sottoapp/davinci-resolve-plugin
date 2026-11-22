@@ -1,6 +1,6 @@
 ---
 name: resolve-color-management
-description: Decide and verify the color pipeline in DaVinci Resolve before any grading — Resolve Color Management (RCM) vs ACES, input/timeline/output color spaces, camera IDTs, tone mapping, HDR vs SDR output, LUT placement, and double-transform detection. Use when setting up or auditing a project's color science, assigning camera input transforms, mixing LUTs with managed footage, preparing multiple outputs (Rec.709/HDR/P3), or when footage looks washed-out, crushed, or double-converted. Use before resolve-color; use resolve-color for the grade itself.
+description: Use when setting up or auditing a project's color pipeline (RCM or ACES), assigning camera input transforms, mixing LUTs with managed footage, or when footage looks washed out, crushed or double-converted.
 ---
 
 # Color management first, grade second
