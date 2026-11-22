@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fairlight-noisy-dialogue-free
+expected_outcome: |
+  DeHummer with 50/60 Hz, then Noise Reduction, conservative use, and notes AI tools are Studio-only.

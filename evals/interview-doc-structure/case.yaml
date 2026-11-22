@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: interview-doc-structure
+expected_outcome: |
+  Organization, paper edit or radio cut, dialogue first, B-roll with a job, ethical check.

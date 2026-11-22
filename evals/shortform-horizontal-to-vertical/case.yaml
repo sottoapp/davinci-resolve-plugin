@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: shortform-horizontal-to-vertical
+expected_outcome: |
+  Duplicate timeline, 9:16 resolution, reframe, hook-first rebuild, safe areas, phone check.

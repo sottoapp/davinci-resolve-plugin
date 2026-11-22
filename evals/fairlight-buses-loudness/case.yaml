@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fairlight-buses-loudness
+expected_outcome: |
+  DX/MX/FX buses to Main, stem solo check, loudness measures and whole-program measurement against a spec target.

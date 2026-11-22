@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fusion-blank-comp
+expected_outcome: |
+  MediaOut must receive the final node; Merge yellow=background and green=foreground inputs swapped.

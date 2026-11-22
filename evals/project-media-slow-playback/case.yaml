@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: project-media-slow-playback
+expected_outcome: |
+  Separates the codec-decode bottleneck (proxy or optimized media) from the effects bottleneck (render cache), gives a diagnostic order, and warns about proxy use at delivery.

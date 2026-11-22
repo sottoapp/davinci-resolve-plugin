@@ -10,7 +10,7 @@ hooks/            hooks.json + the guard scripts it calls
 bin/              executables added to PATH (resolve-doctor)
 mcp-server/       VENDORED upstream, verbatim — never edit (see UPSTREAM.md)
 scripts/          maintenance tooling (validate_plugin.py, gen_skill_library.py)
-evals/            trigger/behavior cases
+evals/            flat test cases, prefixed by skill area (see evals/README.md)
 docs/             human docs: skill-library.md, plugin-components.md, research/
 ```
 

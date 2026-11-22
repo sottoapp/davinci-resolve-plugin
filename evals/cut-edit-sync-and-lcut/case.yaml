@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: cut-edit-sync-and-lcut
+expected_outcome: |
+  Explains Sync Lock / Auto Select behaviour for the ripple and Linked Selection for split edits.

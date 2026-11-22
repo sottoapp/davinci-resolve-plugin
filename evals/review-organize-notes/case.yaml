@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: review-organize-notes
+expected_outcome: |
+  Classify, separate preference from comprehension, group duplicates, structural first, versioning, one change at a time.

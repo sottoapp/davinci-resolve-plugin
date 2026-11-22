@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: project-media-archive-handoff
+expected_outcome: |
+  Explains .drp excludes media, recommends a proxy-only archive, flags non-proxied assets and non-project dependencies, and a restore test.

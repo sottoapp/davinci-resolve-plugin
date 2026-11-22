@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: deliver-multiple-outputs
+expected_outcome: |
+  Queue several jobs, Single Clip for masters, verify presets, pre-render checklist, codec choice.

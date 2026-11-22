@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: fusion-green-screen
+expected_outcome: |
+  Delta Keyer, matte inspection, despill, garbage matte, colour match and edge integration.

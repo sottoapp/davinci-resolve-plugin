@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: shortform-pacing-hook
+expected_outcome: |
+  Move strongest content to the start, drop intros, tighten pauses, captions and emphasis.

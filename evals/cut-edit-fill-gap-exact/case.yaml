@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: cut-edit-fill-gap-exact
+expected_outcome: |
+  Identifies a three-point overwrite (source In plus timeline In/Out) as the speed-preserving option, Fit to Fill as the retiming option, notes Insert would push material, and that shortcuts are customizable.
