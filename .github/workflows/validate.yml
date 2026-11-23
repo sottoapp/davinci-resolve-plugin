@@ -1,6 +1,5 @@
 name: validate
-# Manual only: every push failed in ~1 s with no steps (account/billing, not code). Real CI is appveyor.yml.
-on: workflow_dispatch
+on: [push, pull_request, workflow_dispatch]
 jobs:
   hooks:            # the guards and handoff hooks must behave identically on every OS we claim to support
     strategy:
