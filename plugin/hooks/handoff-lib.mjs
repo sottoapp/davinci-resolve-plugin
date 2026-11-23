@@ -10,7 +10,9 @@ const MAX_AGE_DAYS = 14;         // older handoffs are not injected
 const MAX_INJECT = 6000;         // characters injected at session start
 
 export const dataDir = () => process.env.CLAUDE_PLUGIN_DATA || path.join(os.homedir(), ".claude", "plugins", "data", "davinci-resolve");
-export const projectDir = (cwd) => path.join(dataDir(), "handoffs", crypto.createHash("sha256").update(path.resolve(cwd || process.cwd())).digest("hex").slice(0, 16));
+// realpath so a symlinked path (macOS /var -> /private/var, linked project folders) maps to the same handoff folder from hook and CLI.
+const canon = (d) => { const r = path.resolve(d || process.cwd()); try { return fs.realpathSync(r); } catch { return r; } };
+export const projectDir = (cwd) => path.join(dataDir(), "handoffs", crypto.createHash("sha256").update(canon(cwd)).digest("hex").slice(0, 16));
 
 const redact = (s) => s.replace(/(sk-[A-Za-z0-9_-]{16,}|AIza[0-9A-Za-z_-]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|xox[abp]-[A-Za-z0-9-]{10,}|Bearer\s+[A-Za-z0-9._-]{20,})/g, "[redacted]");
 const clip = (s, n) => { s = redact(String(s).replace(/\s+\n/g, "\n").trim()); return s.length > n ? s.slice(0, n) + " …" : s; };

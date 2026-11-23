@@ -93,3 +93,10 @@ test("garbage input and missing transcript never fail the session", () => {
     assert.equal(run(hook, [mode], { data, input: JSON.stringify({ cwd: mk(), session_id: "z", transcript_path: "/nope" }) }).status, 0);
   }
 });
+
+test("a symlinked directory maps to the same handoff folder as its real path", (t) => {
+  const data = mk(), real = mk(), link = path.join(mk(), "link");
+  try { fs.symlinkSync(real, link, "dir"); } catch { return t.skip("cannot create symlinks here"); }
+  process.env.CLAUDE_PLUGIN_DATA = data;
+  assert.equal(projectDir(link), projectDir(real));
+});
