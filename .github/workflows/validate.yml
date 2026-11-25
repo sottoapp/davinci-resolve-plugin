@@ -19,4 +19,4 @@ jobs:
         with: { node-version: 22 }
       - run: python3 scripts/validate_plugin.py
       - run: python3 scripts/gen_skill_library.py && git diff --exit-code plugin/docs/skill-library.md
-      - run: npm install -g @anthropic-ai/claude-code && claude plugin validate --strict plugin && claude plugin validate --strict .
+      - run: npm install -g @anthropic-ai/claude-code && claude plugin validate --strict plugin && claude plugin validate --strict plugin-advanced && claude plugin validate --strict .

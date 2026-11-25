@@ -10,6 +10,7 @@ plugin/                           THE SHIPPED PLUGIN (≤512 files, each ≤256 
   agents/  hooks/                 subagents; hooks.json + the Node guard scripts it calls + test/ (node --test)
   scripts/                        launch-mcp.mjs, resolve-doctor.mjs, handoff.mjs
   docs/                           skill-library.md, plugin-components.md, research/ (cited by skills)
+plugin-advanced/                  OPTIONAL add-on plugin (offline MCP server only; its own copy of launch-mcp.mjs, kept identical by the validator)
 vendor/davinci-resolve-mcp/       VENDORED upstream source, verbatim, NOT shipped — for review and sync (vendor/UPSTREAM.md)
 evals/                            flat test cases, prefixed by skill area (see evals/README.md)
 scripts/                          maintenance tooling: validate_plugin.py, gen_skill_library.py

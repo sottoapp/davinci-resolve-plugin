@@ -9,7 +9,9 @@ PLUGIN = ROOT / "plugin"                          # the shipped plugin
 VENDOR = ROOT / "vendor/davinci-resolve-mcp"      # upstream source, not shipped
 errors, warnings = [], []
 
-for f in ("plugin/.claude-plugin/plugin.json", ".claude-plugin/marketplace.json", "plugin/.mcp.json", "plugin/hooks/hooks.json"):
+SHIPPED = ("plugin", "plugin-advanced")  # folders the marketplace installs
+for f in ("plugin/.claude-plugin/plugin.json", "plugin-advanced/.claude-plugin/plugin.json", ".claude-plugin/marketplace.json",
+          "plugin/.mcp.json", "plugin-advanced/.mcp.json", "plugin/hooks/hooks.json"):
     try:
         json.loads((ROOT / f).read_text())
     except Exception as e:  # noqa: BLE001
@@ -18,8 +20,8 @@ for f in ("plugin/.claude-plugin/plugin.json", ".claude-plugin/marketplace.json"
 plugin = json.loads((PLUGIN / ".claude-plugin/plugin.json").read_text())
 market = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text())
 for p in market["plugins"]:
-    if p.get("source") != "./plugin":
-        errors.append("marketplace source must be ./plugin (the lean shipped folder)")
+    if p.get("source") not in ("./plugin", "./plugin-advanced"):
+        errors.append(f"marketplace source {p.get('source')} must be ./plugin or ./plugin-advanced (the lean shipped folders)")
     if "version" in p:
         errors.append("marketplace entry sets a version; keep it only in plugin.json")
 
@@ -39,36 +41,39 @@ for event, groups in hooks.items():
 import subprocess
 tracked = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True).stdout.split()
 IMG = (".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg")
-shipped = [f for f in tracked if f.startswith("plugin/")]
+shipped_by = {d: [f for f in tracked if f.startswith(d + "/")] for d in SHIPPED}
 for f in tracked:
     if f.endswith((".pyc", ".pyo", ".so", ".dll", ".exe")) and not f.startswith("vendor/"):
         errors.append(f"tracked binary: {f}")
 # public-directory limits for the shipped folder: <=512 files, each non-image file <=256 KiB, no non-text binaries
-if len(shipped) > 512:
-    errors.append(f"plugin/ has {len(shipped)} files (directory limit 512)")
-for f in shipped:
-    fp = ROOT / f
-    if not f.endswith(IMG) and fp.stat().st_size > 256 * 1024:
-        errors.append(f"{f}: {fp.stat().st_size} bytes (directory limit 256 KiB per non-image file)")
-print(f"plugin/ ships {len(shipped)} files")
-if (PLUGIN / "bin").exists():
-    errors.append("plugin/bin must not exist (claude.ai/Cowork installs refuse it)")
-mcp = json.loads((PLUGIN / ".mcp.json").read_text())["mcpServers"]
-for name, srv in mcp.items():
-    blob = json.dumps(srv)
-    if srv.get("command") not in ("node",) or "@latest" in blob:
-        errors.append(f".mcp.json {name}: use plain node with the pinned launcher")
-launcher = (PLUGIN / "scripts/launch-mcp.mjs").read_text()
-if not re.search(r'const VERSION = "\d+\.\d+\.\d+"', launcher):
-    errors.append("launch-mcp.mjs must pin an exact VERSION")
 pkg = json.loads((VENDOR / "package.json").read_text())["version"]
-if f'const VERSION = "{pkg}"' not in launcher:
-    errors.append(f"launcher pin differs from vendored upstream version {pkg}")
+for d, files in shipped_by.items():
+    if len(files) > 512:
+        errors.append(f"{d}/ has {len(files)} files (directory limit 512)")
+    for f in files:
+        fp = ROOT / f
+        if not f.endswith(IMG) and fp.stat().st_size > 256 * 1024:
+            errors.append(f"{f}: {fp.stat().st_size} bytes (directory limit 256 KiB per non-image file)")
+    print(f"{d}/ ships {len(files)} files")
+    if (ROOT / d / "bin").exists():
+        errors.append(f"{d}/bin must not exist (claude.ai/Cowork installs refuse it)")
+    for name, srv in json.loads((ROOT / d / ".mcp.json").read_text())["mcpServers"].items():
+        if srv.get("command") != "node" or "@latest" in json.dumps(srv):
+            errors.append(f"{d}/.mcp.json {name}: use plain node with the pinned launcher")
+    lt = (ROOT / d / "scripts/launch-mcp.mjs").read_text()
+    if not re.search(r'const VERSION = "\d+\.\d+\.\d+"', lt):
+        errors.append(f"{d}/scripts/launch-mcp.mjs must pin an exact VERSION")
+    if f'const VERSION = "{pkg}"' not in lt:
+        errors.append(f"{d} launcher pin differs from vendored upstream version {pkg}")
+if (PLUGIN / "scripts/launch-mcp.mjs").read_text() != (ROOT / "plugin-advanced/scripts/launch-mcp.mjs").read_text():
+    errors.append("plugin-advanced/scripts/launch-mcp.mjs must be an identical copy of plugin/scripts/launch-mcp.mjs")
 
 link = re.compile(r"`((?:upstream|docs)/[A-Za-z0-9_./-]+)`|\(((?:upstream|docs)/[A-Za-z0-9_./-]+)\)")
 def resolve_link(t):  # upstream/... lives in vendor/, docs/... ships in plugin/
     return VENDOR if t == "upstream" else (VENDOR / t[len("upstream/"):]) if t.startswith("upstream/") else (PLUGIN / t)
 skill_names = {p.name for p in (PLUGIN / "skills").iterdir()}
+budget_rows = {"desc": {}, "body": {}}
+BODY_ALLOW = {"resolve-rough-cut", "resolve-edit", "resolve-tighten-recording", "resolve-conform", "resolve-delivery", "resolve-mcp", "resolve-color", "resolve-audio"}  # trim tracked in issue #2; remove as each is trimmed
 xref = re.compile(r"`((?:resolve|editing)-[a-z-]+|house-style|authoring-resolve-skills)`")
 for skill in sorted((PLUGIN / "skills").iterdir()):
     md = skill / "SKILL.md"
@@ -91,6 +96,8 @@ for skill in sorted((PLUGIN / "skills").iterdir()):
             errors.append(f"{skill.name}: description {len(desc)} chars (>1024)")
         elif len(desc) > 500:
             warnings.append(f"{skill.name}: description {len(desc)} chars (aim <=500)")
+    budget_rows["desc"][skill.name] = desc
+    budget_rows["body"][skill.name] = len(text.split("---", 2)[2]) // 4
     words = len(text.split("---", 2)[2].split())
     if words > 700:
         warnings.append(f"{skill.name}: {words} words (aim <500; move heavy reference to references/)")
@@ -108,6 +115,18 @@ for agent in sorted((PLUGIN / "agents").glob("*.md")):
     for bare in re.findall(r"mcp__davinci-resolve[\w-]*__\w+", agent.read_text()):
         errors.append(f"{agent.name}: unscoped tool name {bare}")
 
+LISTING_MAX, BODY_WARN, BODY_FAIL = 4500, 1000, 1500   # estimated tokens (chars/4); see plugin/docs/ARCHITECTURE.md
+listing = sum(len(d) + len(n) + 12 for n, d in budget_rows["desc"].items()) // 4
+print(f"budget: listing ~{listing} tokens ({len(budget_rows['desc'])} skills, ceiling {LISTING_MAX}); heaviest bodies:")
+for n, t in sorted(budget_rows["body"].items(), key=lambda x: -x[1])[:5]:
+    print(f"  {n:34s} ~{t} tokens")
+if listing > LISTING_MAX:
+    errors.append(f"skill listing ~{listing} tokens exceeds {LISTING_MAX}; shorten descriptions")
+for n, t in budget_rows["body"].items():
+    if t > BODY_FAIL and n not in BODY_ALLOW:
+        errors.append(f"{n}: body ~{t} tokens exceeds {BODY_FAIL}; move detail to references/ (or add to BODY_ALLOW with an issue link)")
+    elif t > BODY_WARN:
+        warnings.append(f"{n}: body ~{t} tokens (warn above {BODY_WARN})")
 print(f"{len(list((PLUGIN/'skills').iterdir()))} skills checked")
 for w in warnings: print("WARN ", w)
 for e in errors: print("ERROR", e)

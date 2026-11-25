@@ -19,6 +19,10 @@ if (!table[mode]) {
   process.exit(2);
 }
 const win = process.platform === "win32";
-const child = spawn(win ? "npx.cmd" : "npx", [...table[mode], ...rest], { stdio: "inherit", shell: win, env: process.env });
+// Quiet, cache-first npx: no update notifier, audit or fund calls; use the local cache when the pinned version is already there.
+const env = { npm_config_prefer_offline: "true", npm_config_update_notifier: "false", npm_config_audit: "false", npm_config_fund: "false", ...process.env };
+// stderr only (stdout carries MCP traffic): say what is starting, since the first run downloads the package (~13 MB).
+console.error(`[davinci-resolve] starting ${PKG} (${mode}) via npx; the first run downloads the package, later runs use the npm cache`);
+const child = spawn(win ? "npx.cmd" : "npx", [...table[mode], ...rest], { stdio: "inherit", shell: win, env });
 child.on("error", (e) => { console.error(`could not start npx (is Node 20+ installed and on PATH?): ${e.message}`); process.exit(1); });
 child.on("exit", (code, signal) => process.exit(code ?? (signal ? 1 : 0)));

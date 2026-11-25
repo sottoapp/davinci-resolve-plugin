@@ -85,6 +85,6 @@ start editing off the back of this.
   is the whole job here.
 
 ## If the Resolve tools are missing or the server won't connect
-A "Connection closed" from `davinci-resolve` / `davinci-resolve-advanced` usually means first-run setup was never done (Node 20+ with `npx` on PATH, the upstream Python venv) or the pinned package could not be fetched
+A "Connection closed" from `davinci-resolve` (or from the optional `davinci-resolve-advanced` add-on, if installed) usually means first-run setup was never done (Node 20+ with `npx` on PATH, the upstream Python venv) or the pinned package could not be fetched
 (offline, proxy). Nothing installs automatically. Run `node scripts/resolve-doctor.mjs`, relay its exact fix
 steps to the user (first-time setup is `node scripts/launch-mcp.mjs setup`), and don't retry the tools until it reports healthy. Resolve itself must be running with a project open.

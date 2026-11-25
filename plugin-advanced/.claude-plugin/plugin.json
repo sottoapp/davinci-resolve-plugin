@@ -1,0 +1,13 @@
+{
+  "name": "davinci-resolve-advanced",
+  "displayName": "DaVinci Resolve (advanced, offline tools)",
+  "version": "0.1.0",
+  "description": "Optional add-on for the DaVinci Resolve plugin: the upstream offline MCP server for DRX, DRP, DRT, AAF, project-database and deliverable QC work that needs no running Resolve. Install only if you use those tools.",
+  "author": { "name": "Sotto Studio" },
+  "homepage": "https://github.com/sottoapp/davinci-resolve-plugin",
+  "repository": "https://github.com/sottoapp/davinci-resolve-plugin",
+  "supportUrl": "https://github.com/sottoapp/davinci-resolve-plugin/issues",
+  "license": "MIT",
+  "keywords": ["davinci-resolve", "mcp", "offline", "conform"],
+  "engines": { "claude-code": ">=2.1.330" }
+}

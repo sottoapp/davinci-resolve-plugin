@@ -17,6 +17,18 @@
         "post-production"
       ],
       "strict": true
+    },
+    {
+      "name": "davinci-resolve-advanced",
+      "source": "./plugin-advanced",
+      "description": "Optional offline MCP server for DRX, DRP, DRT, AAF, project-database and deliverable QC work that needs no running Resolve.",
+      "category": "video",
+      "tags": [
+        "davinci-resolve",
+        "mcp",
+        "offline"
+      ],
+      "strict": true
     }
   ]
 }

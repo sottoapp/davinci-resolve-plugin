@@ -7,6 +7,9 @@ description: Use when starting any DaVinci Resolve task to find the right skill,
 
 > Paths written `upstream/...` are in the upstream repository (https://github.com/samuelgursky/davinci-resolve-mcp, package 5.4.0), not shipped in this plugin; the `resolve_control` tool (`api_truth`) gives the same facts live.
 
+> The offline `davinci-resolve-advanced` tools (DRX, DRP, DRT, AAF, project database, deliverable QC) exist only if the optional add-on plugin is installed: `/plugin install davinci-resolve-advanced@sotto-davinci-resolve`. If a task needs one and it is missing, say so and give that command; do not guess around it.
+
+
 
 Orientation for any Resolve MCP task. This is the **map, not the depth** — each
 domain skill below carries its own routing and triggers on its own `description`.
