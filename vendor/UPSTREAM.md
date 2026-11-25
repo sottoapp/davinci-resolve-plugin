@@ -23,3 +23,6 @@ git -C /tmp/upstream rev-parse HEAD   # record above
 diff -r vendor/davinci-resolve-mcp/.claude/skills plugin/skills   # port skill changes by hand
 # then bump VERSION in plugin/scripts/launch-mcp.mjs to the new package version and re-test
 ```
+
+## Deliberate divergence: trimmed skills (issue #2, 2026-11-25)
+These ported skills were cut to 500 words or fewer; the per-action tables, parameter lists and worked examples moved into `plugin/skills/<name>/references/` (`actions.md`, or `tool-maps.md` for `resolve-mcp`). Some SKILL.md wording was condensed, so a straight upstream sync of these eight needs a manual merge: `resolve-rough-cut`, `resolve-edit`, `resolve-tighten-recording`, `resolve-conform`, `resolve-delivery`, `resolve-mcp`, `resolve-color`, `resolve-audio`. Check method used: every backticked action/tool name and every number from the pre-trim text (commit `a1ba277`) was confirmed present in the new SKILL.md or references; safety rules were confirmed present but not compared line by line.
