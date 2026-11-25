@@ -125,3 +125,6 @@ letting the tightened timeline imply "everything removable was removed".
   operates the screen is pacing, not dead air — raise `min_pause_seconds`
   and review the big lifts instead.
 - Leaving the caps preset on `unlimited` after the run.
+
+## Measured example (kept from the original skill)
+On real material (2026-07-31) a 29 s lift was 70% silent on-screen demonstration: real content, cut because nobody spoke over it. A lift is only silence to the microphone; anything over about 15 s deserves a human look before the variant is trusted.

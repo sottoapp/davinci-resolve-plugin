@@ -88,3 +88,68 @@ for clip_id, start, dur in shots:
 
 Working in seconds and converting once keeps the shot list readable and makes
 the exclusive-`end_frame` rule impossible to get wrong twice.
+
+## Original workflow text and common mistakes
+
+## The deliverable contract
+
+Deliver an assembled timeline. Do **not** add titles, captions, text cards,
+effects, transitions, music, or grading unless explicitly asked. Editors who ask
+for a rough cut want shot selection and pacing; styling is theirs. Adding
+graphics is work that gets thrown away — and see the Fusion trap below for why
+it also silently fails.
+
+Render an mp4 only to preview the cut, and say that is what it is.
+
+## Workflow
+
+1. **Probe before importing.** `ffprobe` every clip for `r_frame_rate`,
+   `avg_frame_rate`, and `rotation`. Two things routinely differ from what the
+   filenames and Resolve suggest — see Verified traps.
+2. **For a series, add a timeline to the existing project — don't create a new
+   one.** Check `project_manager list` first. One project per series keeps the
+   bins, analysed clips and settings in one place; one per episode scatters
+   them. Only create a project for a genuinely new series.
+
+3. **On a NEW project, set BOTH frame rates before any timeline exists.**
+   `timelineFrameRate` is locked once a timeline is created — set it via
+   `project_manager safe_set_project_settings`. `timelinePlaybackFrameRate`
+   cannot be set through the API at all, so **ask the user to set it in the UI
+   now**, as a setup step:
+
+   > Project Settings (gear, bottom-right) → Master Settings → Playback frame rate
+
+   Quote that path as written and **do not extend it from memory** — if the user
+   cannot find it on their build, say you cannot see their screen and point at
+   Blackmagic's manual rather than guessing a second location. Improvised UI
+   directions are what issue #132 cost a user; see the retime entry in
+   `resolve-edit` for the rule.
+
+   Do not defer this to the end or write it off as cosmetic; a mismatch has been
+   reported to affect playback and output, not just the display. On an existing
+   project, read both back and only raise it if they are wrong.
+4. **Create a bin named for the episode, `media_pool set_current_folder` to it,
+   THEN import.** That order is mandatory, not stylistic: `ImportMedia` has no
+   destination parameter and always lands in the *current* folder, so importing
+   first puts the clips wherever the current folder happens to be — see the
+   `MediaPool.ImportMedia (current-folder destination only)` entry in the
+   `api_truth` ledger. Restore the previous current folder afterwards if it
+   matters. One bin per episode, not one shared dump — it keeps `analyze_bin`
+   scoped and the Media Pool readable across a long series.
+5. **Analyse** — `media_analysis analyze_bin`, `sampling_mode="adaptive_capped"`.
+   Complete the `commit_vision` loop for every clip; leaving one in
+   `pending_host_vision_analysis` is a failure, not a partial success (AGENTS.md).
+6. **Find shots via contact sheets**, not one frame at a time:
+   `python3 upstream/scripts/contact_sheet.py <clip_dir> <out_dir>` — see Shot finding.
+7. **Assemble in one call** — `media_pool create_timeline_from_clips` with
+   positioned `clip_infos`. Name the timeline for the episode.
+8. **Verify** — `timeline detect_gaps_overlaps` must return zero of both, and
+   check the total duration against the target.
+## Common mistakes
+
+- Reframing vertical-flagged footage into a vertical timeline — double-rotating
+  or cropping material that already fits.
+- Setting the timeline frame rate after creating the timeline; it is ignored.
+- Trusting `detect_gaps_overlaps` alone — also confirm total duration and
+  inspect representative frames.
+- Reporting a render as the deliverable when the timeline is what was asked for.

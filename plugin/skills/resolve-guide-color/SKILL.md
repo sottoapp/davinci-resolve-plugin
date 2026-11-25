@@ -1,6 +1,6 @@
 ---
 name: resolve-guide-color
-description: Use when asked how to grade or match shots on Resolve's Color page, what a scope or tool does, how to structure nodes, or why a grade looks wrong.
+description: Use when asked how to grade or match shots on Resolve's Color page, what a scope or tool does, how to structure nodes, or why a grade looks wrong. Not for driving Resolve through the MCP (resolve-color).
 ---
 
 # Resolve guide: the Color page

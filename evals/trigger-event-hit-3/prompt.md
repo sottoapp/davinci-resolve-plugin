@@ -1,0 +1,1 @@
+i have eight hours of multicam conference sessions, they lag badly so i want proxies, then i need captions for each session and the final audio at -23 lufs with the room echo reduced. whats the order to do it?

@@ -73,7 +73,7 @@ def resolve_link(t):  # upstream/... lives in vendor/, docs/... ships in plugin/
     return VENDOR if t == "upstream" else (VENDOR / t[len("upstream/"):]) if t.startswith("upstream/") else (PLUGIN / t)
 skill_names = {p.name for p in (PLUGIN / "skills").iterdir()}
 budget_rows = {"desc": {}, "body": {}}
-BODY_ALLOW = {"resolve-rough-cut", "resolve-edit", "resolve-tighten-recording", "resolve-conform", "resolve-delivery", "resolve-mcp", "resolve-color", "resolve-audio"}  # trim tracked in issue #2; remove as each is trimmed
+BODY_ALLOW = set()  # skills allowed above the body fail line; add one with an issue link if needed
 xref = re.compile(r"`((?:resolve|editing)-[a-z-]+|house-style|authoring-resolve-skills)`")
 for skill in sorted((PLUGIN / "skills").iterdir()):
     md = skill / "SKILL.md"

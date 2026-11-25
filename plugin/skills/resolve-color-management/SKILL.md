@@ -1,6 +1,6 @@
 ---
 name: resolve-color-management
-description: Use when setting up or auditing a project's color pipeline (RCM or ACES), assigning camera input transforms, mixing LUTs with managed footage, or when footage looks washed out, crushed or double-converted.
+description: Use when setting up or auditing a project's color pipeline (RCM or ACES), assigning camera input transforms, mixing LUTs with managed footage, or when footage looks washed out, crushed or double-converted. Not for per-shot grading (resolve-color, resolve-guide-color).
 ---
 
 # Color management first, grade second

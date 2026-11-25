@@ -20,8 +20,7 @@ Orientation for any Resolve MCP task: the **map, not the depth**. Each domain sk
 - **Advanced / offline** — `davinci-resolve-advanced` (Node): authors
   `.drp`/`.drt`/`.drx` files and patches the project DB with **no Resolve open**.
 
-Rule of thumb: compute grades, QC, and conform math offline; apply the result
-live. Node never drives Resolve.
+Rule: compute grades, QC, conform math offline; apply live. Node never drives Resolve.
 
 Tool maps: `references/tool-maps.md`
 
@@ -39,18 +38,17 @@ So, before describing what is possible:
    `version_context` saying whether it was measured on an older, newer, or
    identical build. **An older measurement is a prior, not a finding.**
 
-Two failure modes worth naming, because neither announces itself:
+Two silent failure modes:
 
 - **`unknown` is the common answer, and it means probe — not yes.** Only
-  surfaces with recorded evidence are gated; most of the API has never been
+  surfaces with recorded evidence are gated; most of the API was never
   version-bisected. Absence from the unavailable list is not a promise that a
   method exists.
 - **`mcp.version` is the version this process STARTED with.** A running server
   keeps executing it, so `git pull` does not refresh the ledger until restart —
   an `api_truth` miss may mean "stale server", not "no known issues".
 
-When a build is too old for what was asked, say so and name the floor. Do not
-offer the call and let it fail.
+If the build is too old for the ask, say so and name the floor. Do not offer the call and let it fail.
 
 ## Cross-cutting rules (always)
 

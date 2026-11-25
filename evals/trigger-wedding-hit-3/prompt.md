@@ -1,0 +1,1 @@
+my wedding footage has a white dress and dark suits in a backlit ceremony and the bride is blown out while the groom is really dark. also i need skin tones to look right across a few different complexions. help?

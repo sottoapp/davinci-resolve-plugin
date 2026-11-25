@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: trigger-color-miss-2
+expected_outcome: |
+  Does not load the resolve-color skill because this request belongs to resolve-color-management.
+---
+tags: [resolve-color]
+max_turns: 4
+timeout_seconds: 300
+allowed_tools: [Read, Glob, Grep, Skill]
+---
