@@ -100,3 +100,14 @@ test("a symlinked directory maps to the same handoff folder as its real path", (
   process.env.CLAUDE_PLUGIN_DATA = data;
   assert.equal(projectDir(link), projectDir(real));
 });
+
+test("handoff 3-14 days old injects a pointer, not the note; injection is capped", () => {
+  const data = mk(), cwd = mk();
+  run(hook, ["end"], { data, input: JSON.stringify({ session_id: "s1", cwd, transcript_path: transcript(cwd) }) });
+  const dir = path.join(data, "handoffs", fs.readdirSync(path.join(data, "handoffs"))[0]);
+  const fresh = run(hook, ["start"], { data, input: JSON.stringify({ cwd, session_id: "s2", source: "startup" }) }).stdout;
+  assert.ok(fresh.length < 3600, "fresh injection stays near the 3000-char cap");
+  const old = new Date(Date.now() - 5 * 864e5); fs.utimesSync(path.join(dir, "latest.md"), old, old);
+  const out = run(hook, ["start"], { data, input: JSON.stringify({ cwd, session_id: "s3", source: "startup" }) }).stdout;
+  assert.match(out, /5 days ago/); assert.doesNotMatch(out, /vertical cut/);
+});

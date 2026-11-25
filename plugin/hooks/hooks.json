@@ -27,7 +27,7 @@
     ],
     "PostToolUse": [
       {
-        "matcher": "mcp__.*davinci-resolve__(media_analysis|gallery|gallery_stills|timeline_item_color)|Read|Bash",
+        "matcher": "mcp__.*davinci-resolve__(media_analysis|gallery|gallery_stills|timeline_item_color)",
         "hooks": [
           {
             "type": "command",
