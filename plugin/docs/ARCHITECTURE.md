@@ -37,3 +37,4 @@ Skills and agents cite upstream docs as `upstream/...`; the validator resolves t
    must pass `node --test hooks/test/guards.test.mjs`. No `bin/` (it blocks claude.ai/Cowork installs) and no tracked binaries.
 7. `docs/skill-library.md` is generated: `python3 scripts/gen_skill_library.py`. Before committing:
    `python3 scripts/validate_plugin.py && node --test plugin/hooks/test/guards.test.mjs plugin/hooks/test/handoff.test.mjs && claude plugin validate plugin && claude plugin validate .` (run from the repo root).
+5. **Context budget** (enforced by `scripts/validate_plugin.py`, estimated tokens = chars / 4): all skill listings (name + description) at most 4,500; a `SKILL.md` body warns above 1,000 and fails above 1,500 (the validator prints the five heaviest). Put per-action tables in `references/`. Skills still over 1,500 are listed in `BODY_ALLOW` in the validator, each with an issue link; remove them as they are trimmed.

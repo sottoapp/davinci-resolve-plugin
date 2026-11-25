@@ -18,8 +18,8 @@ Session id, end time and reason · the assistant's last message · the last 5 us
 ## Behaviour and limits
 - Stored per working directory under `${CLAUDE_PLUGIN_DATA}/handoffs/<hash>/` (fallback `~/.claude/plugins/data/davinci-resolve/`);
   `latest.md` plus the 10 newest dated copies. **Nothing is sent anywhere.**
-- Injected at `startup`, `resume` and `clear`; skipped after `compact`, for the session that wrote it, and when older than 14 days.
-  Injection is capped at 6,000 characters.
+- Injected at `startup`, `resume` and `clear`; skipped after `compact`, for the session that wrote it, and when older than 14 days; a handoff 3–14 days old injects only a one-line pointer (read it with `node scripts/handoff.mjs show`).
+  Injection is capped at 3,000 characters (about 750 tokens).
 - Prompts and messages are quoted from the transcript, so they can contain whatever was typed. Obvious API keys and bearer tokens
   are redacted, but treat `show` output as sensitive before sharing it. Injected text is framed as notes, not instructions.
 - The hooks are informational: any failure is swallowed and the session continues. (Contrast with the PreToolUse guards, which fail closed.)
