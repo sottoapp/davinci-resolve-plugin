@@ -6,7 +6,7 @@ description: Use when building the graphics package or transitions for event vid
 # Event graphics, titles and transitions
 
 Treat motion graphics as one consistent information system, not a pile of effects: hard cuts for most of the programme, designed transitions for structural or musical moments.
-Sources: a deep research run, Blackmagic Fusion and macro guidance and four tutorials (the Sotto DaVinci Resolve knowledge base (Notion) › Titles, effects and graphics). Edit structure: `event-video-editing`; text mechanics: `resolve-titles-and-lower-thirds`; sponsor and brand obligations: `event-delivery-compliance`.
+Sources: a deep research run, Blackmagic Fusion and macro guidance and four tutorials (the DaVinci Resolve Context page (Notion) › Titles, effects and graphics). Edit structure: `event-video-editing`; text mechanics: `resolve-titles-and-lower-thirds`; sponsor and brand obligations: `event-delivery-compliance`.
 
 ## Build the system before the recap
 1. Collect brand rules: approved fonts and weights, colours, logo versions, clear space, minimum size, allowed backgrounds, animation behaviour.

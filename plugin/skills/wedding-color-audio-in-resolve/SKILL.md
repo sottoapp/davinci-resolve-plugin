@@ -6,7 +6,7 @@ description: Use when color grading or fixing audio for a wedding film in DaVinc
 # Wedding colour and audio in Resolve
 
 Preserve what was said and keep people looking like themselves. Resolve's API cannot author wheels, curves, qualifiers or Fairlight chains (`resolve-api-reliability`): these are UI steps to hand the user, or use DRX/LUT via `resolve-color`.
-Sources: deep research plus three tutorials, not tested on real wedding footage (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Wedding). Free vs Studio claims vary by version; confirm with `resolve-edition-features`.
+Sources: deep research plus three tutorials, not tested on real wedding footage (the DaVinci Resolve Context page (Notion) › Vertical: Wedding). Free vs Studio claims vary by version; confirm with `resolve-edition-features`.
 
 ## Colour order
 1. **Identify each source**: camera, gamma AND gamut (S-Gamut3 vs S-Gamut3.Cine matters), HLG is not log, each DJI profile differs. Details: `resolve-color-management`.

@@ -5,7 +5,7 @@ description: Use when asked how to export or render from Resolve, which render m
 
 # Resolve guide: the Deliver page
 
-Sources: Reference Manual and a Resolve 20 beginner tutorial (the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve app guides).
+Sources: Reference Manual and a Resolve 20 beginner tutorial (the DaVinci Resolve Context page (Notion) › Research: general > Resolve app guides).
 
 ## Workflow
 1. Select the intended **timeline**. 2. Choose a **preset** or **Custom Export**. 3. Set filename and

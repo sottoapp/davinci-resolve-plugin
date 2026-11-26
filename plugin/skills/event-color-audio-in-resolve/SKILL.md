@@ -6,7 +6,7 @@ description: Use when grading or fixing audio for event video in DaVinci Resolve
 # Event colour, audio and finishing in Resolve
 
 Preserve the lighting design and keep speakers intelligible. Resolve's API cannot author wheels, curves, qualifiers, windows or Fairlight chains (`resolve-api-reliability`): hand the user UI steps or use DRX/LUT via `resolve-color`.
-Sources: deep research plus two multicam tutorials; no event colour or audio tutorial was analysed and nothing was tried on real event footage (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Event). Free vs Studio claims vary by version, so confirm with `resolve-edition-features`.
+Sources: deep research plus two multicam tutorials; no event colour or audio tutorial was analysed and nothing was tried on real event footage (the DaVinci Resolve Context page (Notion) › Vertical: Event). Free vs Studio claims vary by version, so confirm with `resolve-edition-features`.
 
 ## Long sessions
 - Proxies first (ProRes Proxy/LT or DNxHR LB/SQ), Prefer Proxies while cutting, Render Cache for heavy NR, Fusion or titles; final render must use originals unless proxies were requested (`resolve-proxy-relink`).

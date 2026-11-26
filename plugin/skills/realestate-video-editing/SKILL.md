@@ -6,7 +6,7 @@ description: Use when editing a property listing video, cinematic home walkthrou
 # Real-estate video editing
 
 Clarity and continuity beat effects. The buyer is "walking" the home: show the best thing first, keep the layout legible, make every fact accurate.
-Sourced from practitioner guides and Resolve tutorials (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Real estate); lengths and BPM are conventions, not rules.
+Sourced from practitioner guides and Resolve tutorials (the DaVinci Resolve Context page (Notion) › Vertical: Real estate); lengths and BPM are conventions, not rules.
 
 ## Deliverables (one 16:9 master → native variants)
 | Cut | Length | Open with |

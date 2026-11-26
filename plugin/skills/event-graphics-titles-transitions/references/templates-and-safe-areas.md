@@ -1,6 +1,6 @@
 # Event templates, safe areas and brand QA — reference
 
-Sources: the Sotto DaVinci Resolve knowledge base (Notion) › Titles, effects and graphics and its video analyses. Safe-zone numbers for platforms change; verify on the platform.
+Sources: the DaVinci Resolve Context page (Notion) › Titles, effects and graphics and its video analyses. Safe-zone numbers for platforms change; verify on the platform.
 
 ## Safe areas and mobile
 Resolve Viewer safe-area overlays: Action about 93%, Title about 90%, Center; they do not render. Keep names, session titles, URLs, sponsor legal copy, captions and CTAs inside Title. For each social version: a real 9:16 timeline, a platform safe-zone overlay above the edit, preview at phone scale, check the busiest background behind every caption, check bottom and right UI zones, upload an unlisted test where possible.

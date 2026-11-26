@@ -6,7 +6,7 @@ description: Use when adding, styling, animating or templating on-screen text in
 # Titles and lower thirds in Resolve
 
 Text that is legible, consistent and quiet beats text that is clever. Sources: Blackmagic and Fusion training summaries plus four tutorials analysed by Gemini
-(the Sotto DaVinci Resolve knowledge base (Notion) › Titles, effects and graphics); sizes, frame counts and offsets are one instructor's example values. Wedding, event and real-estate specifics: `wedding-effects-transitions-titles`, `event-graphics-titles-transitions`, `realestate-video-editing`.
+(the DaVinci Resolve Context page (Notion) › Titles, effects and graphics); sizes, frame counts and offsets are one instructor's example values. Wedding, event and real-estate specifics: `wedding-effects-transitions-titles`, `event-graphics-titles-transitions`, `realestate-video-editing`.
 
 ## Pick the tool
 | Need | Use | Gotcha |

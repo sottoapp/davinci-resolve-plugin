@@ -6,7 +6,7 @@ description: Use when editing a wedding film in DaVinci Resolve (teaser, highlig
 # Wedding video editing
 
 Irreplaceable words and moments come first; style, music and effects serve the couple's story and never hide a technical or editorial weakness.
-Sourced from practitioner guides, Blackmagic material and two Resolve tutorials (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Wedding). Lengths and turnaround are conventions, not standards.
+Sourced from practitioner guides, Blackmagic material and two Resolve tutorials (the DaVinci Resolve Context page (Notion) › Vertical: Wedding). Lengths and turnaround are conventions, not standards.
 
 ## Deliverables are different products
 | Cut | Typical length | Rule |

@@ -1,6 +1,6 @@
 # Reliability matrix by API area
 
-Source: deep-research digest (see the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve scripting API).
+Source: deep-research digest (see the DaVinci Resolve Context page (Notion) › Research: general > Resolve scripting API).
 Validate against the installed `DaVinciResolveScript.pyi` and `resolve_control api_truth`.
 
 ## Table of contents
