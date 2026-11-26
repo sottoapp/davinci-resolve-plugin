@@ -6,7 +6,7 @@ description: Use when asked how to clean up or mix audio in Resolve, which Fairl
 # Resolve guide: Fairlight
 
 Sources: Fairlight Audio Guide to DaVinci Resolve 20 and a Resolve 21 Fairlight lesson analysed with Gemini
-(`docs/research/resolve-app-guides.md`). Which tools are Studio-only is called out; confirm on the user's edition.
+(the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve app guides). Which tools are Studio-only is called out; confirm on the user's edition.
 
 ## Mental model
 - **Clip** = one audio event (clip gain, fades, local repair). **Track** = channel strip (fader, pan, EQ,

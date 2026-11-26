@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Starts the upstream davinci-resolve-mcp servers at ONE pinned npm version, the same way on macOS and Windows.
 // Usage: node launch-mcp.mjs live | advanced | doctor [args] | setup [args]
-// This plugin ships no server code; the pinned package is fetched by npx on first use (see docs/PUBLISHING.md).
+// This plugin ships no server code; the pinned package is fetched by npx on first use (see the Publishing page in the Sotto DaVinci Resolve knowledge base, Notion).
 // Bump VERSION only after re-testing: the source of that version is vendored for review in vendor/davinci-resolve-mcp.
 import { spawn } from "node:child_process";
 

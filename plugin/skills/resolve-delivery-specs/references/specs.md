@@ -2,7 +2,7 @@
 
 Sources: YouTube Help (recommended upload encoding), EBU R 128 / Tech 3343, DCP
 guidance (HPA/Deluxe, DCP-o-matic manual), Apple ProRes white paper, Blackmagic
-delivery training. See `docs/research/post-production-workflows.md` for the full list.
+delivery training. See the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > post-production workflows for the full list.
 
 | Target | Baseline | Watch out for |
 |---|---|---|

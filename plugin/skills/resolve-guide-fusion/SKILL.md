@@ -6,7 +6,7 @@ description: Use when asked how to composite, key green screen, track and attach
 # Resolve guide: Fusion
 
 Sources: Visual Effects Guide to DaVinci Resolve 20 and Advanced Visual Effects guide
-(`docs/research/resolve-app-guides.md`).
+(the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve app guides).
 
 ## Mental model
 A **node graph**, not layers: nodes are media, effects, generators, masks, transforms, keyers;

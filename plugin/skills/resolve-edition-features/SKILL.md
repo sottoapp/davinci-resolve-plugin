@@ -10,7 +10,7 @@ confirm the edition and build (`resolve-session`, `resolve_control get_version`)
 
 **What is confirmed:** only items listed on Blackmagic's Resolve 21 Studio / compare pages (and the 21.1 readme for scripting).
 Which *version introduced* each feature was **not** verified — don't state one. Findings and sources:
-`docs/research/resolve-edition-features.md`.
+the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > edition features.
 
 ## Studio-only (per Blackmagic Resolve 21 pages)
 Magic Mask · Voice Isolation · Dialogue Separator · Speed Warp · Smart Reframe · Object Removal · temporal and AI spatial noise

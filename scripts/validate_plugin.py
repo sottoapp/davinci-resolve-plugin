@@ -115,7 +115,7 @@ for agent in sorted((PLUGIN / "agents").glob("*.md")):
     for bare in re.findall(r"mcp__davinci-resolve[\w-]*__\w+", agent.read_text()):
         errors.append(f"{agent.name}: unscoped tool name {bare}")
 
-LISTING_MAX, BODY_WARN, BODY_FAIL = 4500, 1000, 1500   # estimated tokens (chars/4); see plugin/docs/ARCHITECTURE.md
+LISTING_MAX, BODY_WARN, BODY_FAIL = 4500, 1000, 1500   # estimated tokens (chars/4); see plugin/docs/README.md
 listing = sum(len(d) + len(n) + 12 for n, d in budget_rows["desc"].items()) // 4
 print(f"budget: listing ~{listing} tokens ({len(budget_rows['desc'])} skills, ceiling {LISTING_MAX}); heaviest bodies:")
 for n, t in sorted(budget_rows["body"].items(), key=lambda x: -x[1])[:5]:

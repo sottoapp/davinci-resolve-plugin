@@ -1,6 +1,6 @@
 # Platform and MLS specs — researched 2026-11-22 (verify before delivery)
 
-Sources: `docs/research/real-estate/delivery-compliance.md` (lists every URL). No national MLS video spec exists.
+Sources: the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Real estate (lists every URL). No national MLS video spec exists.
 
 | Destination | Aspect / resolution | Length / size | Rules |
 |---|---|---|---|

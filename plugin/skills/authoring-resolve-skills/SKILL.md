@@ -7,7 +7,7 @@ description: Use when adding, fixing or releasing skills, agents, hooks or manif
 
 Use `skill-creator` for the draft → test → review → iterate loop; this skill adds
 what is specific to this repo. Rationale for each rule is in
-`docs/research/claude-plugin-authoring.md`.
+the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > plugin authoring.
 
 ## Where things go
 - `skills/<name>/SKILL.md` (+ `references/`, `scripts/`) — one skill per task family.

@@ -1,6 +1,6 @@
 # Settings seen in Resolve real-estate tutorials (via Gemini; one instructor each — adapt to your footage)
 
-Sources: `docs/research/real-estate/video-analyses/` (Van Beek HNvEhGZ2DCU, Resolve Studio 18; Tpz3Zbi-obk, same creator's clean-white method; Marcela 1tJqoS7G5Ks, Resolve 17).
+Sources: the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Real estate > video analyses (Van Beek HNvEhGZ2DCU, Resolve Studio 18; Tpz3Zbi-obk, same creator's clean-white method; Marcela 1tJqoS7G5Ks, Resolve 17).
 Gemini's statements that a tool "is Studio-only" were its own inference unless the presenter said so — verify (`resolve-edition-features`).
 
 ## Van Beek — node tree (Alt+S adds serial nodes; Node Label to name)

@@ -5,7 +5,7 @@ description: Use when editing conference, corporate, keynote, panel, trade-show,
 
 # Event video editing
 
-An event is a content system, not one video. Define the deliverables before touching footage; build the hero recap first and derive the rest. Sourced from event-videography guides, Blackmagic material and two multicam tutorials (`docs/research/event/`). Lengths are conventions.
+An event is a content system, not one video. Define the deliverables before touching footage; build the hero recap first and derive the rest. Sourced from event-videography guides, Blackmagic material and two multicam tutorials (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Event). Lengths are conventions.
 
 ## Deliverables
 | Cut | Typical length | Open with |
@@ -24,7 +24,7 @@ Per-deliverable structures, B-roll list and same-day plan: `references/structure
 2. **Ingest and protect**: verified copies, then bins by session, camera, audio, slides, B-roll, graphics; keywords and markers for quotes, applause, reveals, sponsor mentions.
 3. **Sync**: timecode only if truly jam-synced; else waveform (every camera needs scratch audio); else marker or in/out; verify at start, middle and end of long sessions, and investigate drift (frame rate, VFR, independent clocks) rather than nudging.
 4. **Program vs ISO**: program feed is fastest, ISOs let you repair bad live cuts and make verticals; the usual best path is hybrid. Keep the clean board feed, lavs and room mics as separate audio, not only the switched mix.
-5. **Multicam** with angles named by function (wide, tight, roam, audience, slides) and a reference or board-mix audio angle; switch video only; do not flatten the only copy. Failure modes: `docs/research/event/video-analyses/`.
+5. **Multicam** with angles named by function (wide, tight, roam, audience, slides) and a reference or board-mix audio angle; switch video only; do not flatten the only copy. Failure modes: the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Event > video analyses.
 6. **Slides**: capture from the AV system, not by filming the screen; full-frame when content-heavy, picture-in-picture when the speaker matters, brief flashes in recaps.
 7. **Recap**: open on the strongest moment, not a logo; weave soundbites through B-roll; hold key moments; natural applause and crowd under music; end with impact and the required CTA or sponsor card.
 8. **Full sessions**: one timeline per session, trim dead air, default to the cleanest angle, strap shown on first introduction, keep audience questions, chapter markers, watch the whole export.

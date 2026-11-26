@@ -1,6 +1,6 @@
 # Event structures, B-roll and same-day plan — reference
 
-Source: `docs/research/event/editing-workflow.md` (secondary, practitioner guides). Times are conventions.
+Source: the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Event (secondary, practitioner guides). Times are conventions.
 
 ## Recap (about 2–4 min, adapt for 60–90 s)
 - 0:00–0:05 strongest moment (applause, reveal, quote, play, reaction).

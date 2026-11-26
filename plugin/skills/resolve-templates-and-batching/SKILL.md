@@ -6,7 +6,7 @@ description: Use when setting up repeatable Resolve work: project templates, Pow
 # Templates and batching in Resolve
 
 Repeat jobs (listings, weddings, events, social packages) should start from a tested master, not a blank project. The risk is carrying stale logos, grades and routing into the next
-client — so version and test the template. Sourced from Blackmagic guides and working-editor reports (`docs/research/real-estate/repeatable-workflows.md`); Free/Studio notes are per that research — verify (`resolve-edition-features`).
+client — so version and test the template. Sourced from Blackmagic guides and working-editor reports (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Real estate); Free/Studio notes are per that research — verify (`resolve-edition-features`).
 
 ## What to build
 | Piece | How | Watch out |

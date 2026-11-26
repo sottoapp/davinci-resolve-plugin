@@ -6,7 +6,7 @@ description: Use when asked how to perform an edit on Resolve's Cut or Edit page
 # Resolve guide: Cut and Edit pages
 
 Sources: Resolve 20 Reference Manual and Blackmagic's Beginner's/Editor's guides
-(`docs/research/resolve-app-guides.md`). **Shortcuts are customizable and differ by page, OS
+(the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve app guides). **Shortcuts are customizable and differ by page, OS
 and preset** — confirm in *DaVinci Resolve ▸ Keyboard Customization*.
 
 ## Cut vs Edit

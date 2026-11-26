@@ -6,7 +6,7 @@ description: Use when asked how Resolve handles projects, databases, media and a
 # Resolve guide: projects and media
 
 Based on the official Resolve Reference Manual and Blackmagic training (see
-`docs/research/resolve-app-guides.md`). Menu names shift slightly between versions —
+the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve app guides). Menu names shift slightly between versions —
 say so when precision matters, and verify against the user's build.
 
 ## Mental model

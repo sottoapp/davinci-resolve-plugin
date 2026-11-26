@@ -7,7 +7,7 @@ description: Use when preparing real estate video for the MLS, Zillow, social or
 
 A listing video is advertising for a regulated product. Rules differ by MLS, platform and state, so **never assume one file fits every destination**, and never
 let a deadline or an agent's request turn a rule into an afterthought. Specs below are as researched on 2026-11-22 — verify the upload screen and MLS rules before delivery
-(`references/platform-specs.md`, `docs/research/real-estate/delivery-compliance.md`). This is practical guidance, not legal advice.
+(`references/platform-specs.md`, the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Real estate). This is practical guidance, not legal advice.
 
 ## Always make two (or more) versions
 - **MLS master — unbranded, landscape, MP4/H.264/AAC.** No agent or brokerage name, logo, phone, URL, QR code, social handle, CTA, persistent watermark or lower-third contact info;

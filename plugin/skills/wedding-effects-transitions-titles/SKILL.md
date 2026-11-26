@@ -6,7 +6,7 @@ description: Use when choosing or building transitions, effects, titles or typog
 # Wedding effects, transitions and titles
 
 The film should feel edited, not effected: viewers remember the couple, voices and reactions, not the transition pack. The effect budget is small; spend it on structure.
-Sources: a deep research run (consensus of wedding-editing guidance, not a survey), Blackmagic training and three tutorials (`docs/research/titles-effects/`). Story and audio come first (`wedding-video-editing`); general text mechanics: `resolve-titles-and-lower-thirds`.
+Sources: a deep research run (consensus of wedding-editing guidance, not a survey), Blackmagic training and three tutorials (the Sotto DaVinci Resolve knowledge base (Notion) › Titles, effects and graphics). Story and audio come first (`wedding-video-editing`); general text mechanics: `resolve-titles-and-lower-thirds`.
 
 ## Transitions and effects
 | Use | Do | Avoid |

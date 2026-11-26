@@ -6,14 +6,14 @@ with a research-backed library of workflow skills, review agents and safety hook
 
 ```
 .claude-plugin/marketplace.json   marketplace entry (source ./plugin)
-plugin/                           the shipped plugin (144 files; limits and layout: plugin/docs/ARCHITECTURE.md)
+plugin/                           the shipped plugin (about 90 files after the docs split; layout and rules: plugin/docs/README.md)
   .claude-plugin/plugin.json  .mcp.json   manifest; live MCP server started via scripts/launch-mcp.mjs (pinned upstream npm 5.4.0)
   skills/                         49 skills in four layers — index in plugin/docs/skill-library.md
                                     realestate-*, wedding-*, event-*   vertical know-how (editing, colour/audio, effects/titles, delivery/compliance)
                                     resolve-guide-*  Resolve itself (manual-based app guides)
                                     editing-*        editing craft mapped to Resolve actions
                                     resolve-*, ...   driving Resolve through the MCP server
-  agents/  hooks/  scripts/  docs/  review agents; source-media and frame-evidence guards (Node, fail-closed) and session handoff; launcher, doctor, handoff CLI; sourced research
+  agents/  hooks/  scripts/  docs/  review agents; source-media and frame-evidence guards (Node, fail-closed) and session handoff; launcher, doctor, handoff CLI; skill index and handoff docs (research and design notes live in the Notion knowledge base)
 plugin-advanced/                   optional add-on plugin: the offline MCP server (install only if you need DRX/AAF/DB/QC tools)
 vendor/davinci-resolve-mcp/       upstream source, verbatim, NOT shipped (vendor/UPSTREAM.md)
 evals/                            behaviour cases per skill area
@@ -39,6 +39,6 @@ scripts/                          validate_plugin.py, gen_skill_library.py (main
 
 ## Status
 `python3 scripts/validate_plugin.py`, `claude plugin validate plugin` and `claude plugin validate .` pass (the validator also enforces the directory limits on `plugin/`); the Node hooks pass 55 tests (`node --test plugin/hooks/test/*.mjs` files, guards parity-checked against the original Python);
-three skills were baseline-tested with subagents (`plugin/docs/research/skill-baseline-tests.md`).
+three skills were baseline-tested with subagents (results are kept in the Notion knowledge base).
 **Not yet run against a live Resolve**, and `claude plugin eval` has not been run.
 **The `npx` launcher path has not been run end to end** (the first attempt was blocked in this environment), so verify `node scripts/launch-mcp.mjs setup` and a live connection on macOS and Windows before publishing.

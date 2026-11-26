@@ -38,4 +38,4 @@ evals/<case-name>/
 | `trigger-<short>-hit-N` / `-miss-N` | whether the right colour skill loads (`color`, `colormgmt`, `guidecolor`, `realestate`, `wedding`, `event`); tag = skill under test |
 
 Each case's `prompt.md` frontmatter has `tags: [<skill-name>]`. Run results (workspace, outputs, benchmark) are **not** committed;
-summaries go in `docs/research/skill-eval-*.md`. Still to write: trigger/near-miss cases and cases for the MCP-driving skills.
+summaries go in the Notion knowledge base (Research: general / the vertical's skill tests). Still to write: trigger/near-miss cases and cases for the MCP-driving skills.

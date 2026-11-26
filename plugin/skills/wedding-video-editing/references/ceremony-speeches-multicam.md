@@ -1,6 +1,6 @@
 # Ceremony, speeches and multicam — reference
 
-Sources: `docs/research/wedding/editing-workflow.md`, `docs/research/wedding/video-analyses/wedding_features.md`, `docs/research/event/video-analyses/` (multicam). Menu names move between Resolve versions; verify on the installed one.
+Sources: the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Wedding, the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Wedding > video analyses, the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Event > video analyses (multicam). Menu names move between Resolve versions; verify on the installed one.
 
 ## Building the multicam
 1. Put all simultaneous angles and the reference audio in one bin; set Camera # on clips so several files from one camera share an angle.

@@ -6,7 +6,7 @@ description: Use when building speed ramps, whip or zoom transitions, luma-fade 
 # Speed ramps and effect transitions in Resolve
 
 Effects serve the cut: ramp to shorten travel or sell a reveal, land on a beat, then return to normal. Overuse is the giveaway. (Real estate conventions: `realestate-video-editing`.)
-Mechanics below are from a Resolve Studio 20 tutorial analysed by Gemini (`docs/research/real-estate/video-analyses/effects_lnbdao.md`) — **one editor's values**, and he sells some of the presets he uses
+Mechanics below are from a Resolve Studio 20 tutorial analysed by Gemini (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Real estate > video analyses) — **one editor's values**, and he sells some of the presets he uses
 (Luma Fade, Cine-Whip, Warp, Disappear, Motion Blur Pro/Simple are third-party): the native route is given for each. None of this is scriptable; give UI steps.
 
 ## Speed ramp

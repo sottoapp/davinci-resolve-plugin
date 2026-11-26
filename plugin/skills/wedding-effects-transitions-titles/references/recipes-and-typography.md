@@ -1,6 +1,6 @@
 # Wedding effect recipes and typography — reference
 
-Sources: `docs/research/titles-effects/wedding-effects-titles.md` and its video analyses. Menu names move between versions; check the installed one. These are UI steps; the scripting API cannot build them (`resolve-api-reliability`).
+Sources: the Sotto DaVinci Resolve knowledge base (Notion) › Titles, effects and graphics and its video analyses. Menu names move between versions; check the installed one. These are UI steps; the scripting API cannot build them (`resolve-api-reliability`).
 
 ## Transition recipes
 - **Dissolve**: Effects Library > Video Transitions > Cross Dissolve onto the cut; duration by handle or Inspector; Alignment centred, start or end on cut. Shortcuts shown in a tutorial: Alt/Option-T video, Shift-T audio crossfade, Ctrl/Cmd-T both. Set the standard duration in Preferences > User > Editing. No handles means the transition applies to one side or not at all.

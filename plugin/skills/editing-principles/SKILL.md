@@ -6,7 +6,7 @@ description: Use when deciding how to cut a scene, why an edit feels wrong, whic
 # Editing principles in Resolve
 
 Treat every cut as a storytelling decision, not a software operation. Sources: Murch's *In the Blink of an Eye*
-(via a video analysed with Gemini and a deep-research synthesis; `docs/research/editing-craft.md`).
+(via a video analysed with Gemini and a deep-research synthesis; the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > editing craft).
 
 ## The decision filter: Murch's Rule of Six
 Ranked, with Murch's approximate weights. When criteria conflict, protect the higher ones; the first three are

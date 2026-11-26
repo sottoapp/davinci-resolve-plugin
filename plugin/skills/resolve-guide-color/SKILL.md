@@ -6,7 +6,7 @@ description: Use when asked how to grade or match shots on Resolve's Color page,
 # Resolve guide: the Color page
 
 Sources: Colorist Guide to DaVinci Resolve 20, Reference Manual, and a worked node workflow from a
-tutorial analysed with Gemini (`docs/research/resolve-app-guides.md`). Principle: **measure and
+tutorial analysed with Gemini (the Sotto DaVinci Resolve knowledge base (Notion) › Research: general > Resolve app guides). Principle: **measure and
 balance first; isolate carefully; then design the look.** It is a default order, not a law.
 
 ## Layout in one breath

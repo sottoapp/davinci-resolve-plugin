@@ -5,7 +5,7 @@ description: Use when preparing event video for publication or delivery: sponsor
 
 # Event delivery and compliance
 
-Event video publishes other people's faces, brands, slides and music. Guidance from location, sponsorship, GDPR/ICO, WCAG, PRO-licensing and platform sources (`docs/research/event/delivery-compliance.md`), dated 2026-11-22.
+Event video publishes other people's faces, brands, slides and music. Guidance from location, sponsorship, GDPR/ICO, WCAG, PRO-licensing and platform sources (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Event), dated 2026-11-22.
 **Not legal advice**: law, collective agreements, venue contracts, sponsor agreements and platform rules control and vary by jurisdiction. Say so, and verify specs on the upload screen before delivery.
 
 ## Clearance register (before filming; check again before publishing)

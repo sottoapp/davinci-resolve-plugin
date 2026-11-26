@@ -5,7 +5,7 @@ description: Use when delivering a wedding film or setting its terms: music lice
 
 # Wedding delivery and client care
 
-A wedding film holds private moments, other people's faces and music someone owns. Practical guidance from published studio practice, library terms and standards pages (`docs/research/wedding/delivery-compliance.md`), dated 2026-11-22.
+A wedding film holds private moments, other people's faces and music someone owns. Practical guidance from published studio practice, library terms and standards pages (the Sotto DaVinci Resolve knowledge base (Notion) › Vertical: Wedding), dated 2026-11-22.
 **Not legal advice**; privacy, recording-consent, copyright and contract law vary by jurisdiction, so say so and point the user to a local lawyer for contract wording. Verify every licence and platform term before delivery.
 
 ## Before the shoot (terms)
